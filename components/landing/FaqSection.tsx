@@ -22,33 +22,38 @@ export function FaqSection() {
           </h2>
         </div>
 
-        <div className="space-y-4 mx-auto max-w-[800px]">
+        <dl className="space-y-4 mx-auto max-w-[800px]">
           {faq.map((item, i) => (
             <div
               key={i}
               className="overflow-hidden rounded-3xl border border-lp-line bg-lp-card transition-all duration-300"
             >
-              <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                aria-expanded={openIndex === i}
-                aria-controls={`faq-answer-${i}`}
-                className="flex w-full items-center justify-between p-6 text-left sm:p-8"
-              >
-                <span id={`faq-question-${i}`} className="text-lg font-semibold tracking-tight text-lp-ink sm:text-xl">
-                  {item.question}
-                </span>
-                <span
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lp-bg-2 text-lp-ink transition-transform duration-300 ${
-                    openIndex === i ? "rotate-180" : ""
-                  }`}
+              <dt>
+                <button
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  aria-expanded={openIndex === i}
+                  aria-controls={`faq-answer-${i}`}
+                  className="flex w-full items-center justify-between p-6 text-left sm:p-8"
                 >
-                  <ChevronDown size={20} aria-hidden="true" />
-                </span>
-              </button>
+                  <span
+                    id={`faq-question-${i}`}
+                    className="text-lg font-semibold tracking-tight text-lp-ink sm:text-xl"
+                  >
+                    {item.question}
+                  </span>
+                  <span
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lp-bg-2 text-lp-ink transition-transform duration-300 ${
+                      openIndex === i ? "rotate-180" : ""
+                    }`}
+                  >
+                    <ChevronDown size={20} aria-hidden="true" />
+                  </span>
+                </button>
+              </dt>
 
               <AnimatePresence initial={false}>
                 {openIndex === i && (
-                  <motion.div
+                  <motion.dd
                     id={`faq-answer-${i}`}
                     role="region"
                     aria-labelledby={`faq-question-${i}`}
@@ -56,18 +61,19 @@ export function FaqSection() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
+                    className="m-0"
                   >
                     <div className="border-t border-lp-line/50 px-6 pb-8 pt-4 sm:px-8">
                       <p className="text-base leading-[1.7] text-lp-ink-soft sm:text-lg">
                         {item.answer}
                       </p>
                     </div>
-                  </motion.div>
+                  </motion.dd>
                 )}
               </AnimatePresence>
             </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   )

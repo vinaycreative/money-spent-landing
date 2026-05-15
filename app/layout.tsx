@@ -51,13 +51,22 @@ export const metadata: Metadata = {
     description: siteDescription,
     url: "/",
     siteName,
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: `${siteName} Preview`,
+      },
+    ],
     type: "website",
     locale: "en_IN",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: `${siteName} | Personal Finance & Expense Tracker`,
     description: siteDescription,
+    images: ["/og.png"],
   },
   robots: {
     index: true,
@@ -87,7 +96,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <head>
         <ThemeScript />
         <AccentScript />
@@ -96,7 +109,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} bg-background`}
         suppressHydrationWarning
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>

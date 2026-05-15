@@ -51,13 +51,22 @@ export const metadata: Metadata = {
       "Track expenses, budgets, accounts, and spending trends in one clean personal finance app.",
     url: "/",
     siteName: "MoneySpent",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "MoneySpent Preview",
+      },
+    ],
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "MoneySpent | Simple Personal Finance & Expense Tracker",
     description:
       "A clean personal finance app for expense tracking, budgets, accounts, and spending insights.",
+    images: ["/og.png"],
   },
 }
 
