@@ -9,16 +9,16 @@ export const RotedWord = ({ texts }: RotedWordProps) => {
   return (
     <RotatingText
       texts={texts}
-      mainClassName="px-2 sm:px-2 md:px-3 bg-black text-[#39B87F] overflow-hidden py-0.5 sm:py-1 justify-center rounded-lg"
+      mainClassName="px-2 sm:px-3 bg-lp-ink text-lp-em py-1 sm:py-1.5 justify-center rounded-lg inline-flex items-center"
       staggerFrom="last"
-      initial={{ y: "100%" }}
-      animate={{ y: 0 }}
-      exit={{ y: "-120%" }}
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: "-100%", opacity: 0 }}
       staggerDuration={0.025}
-      splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+      splitLevelClassName="overflow-hidden"
       transition={{ type: "spring", damping: 30, stiffness: 400 }}
       rotationInterval={2000}
-      splitBy="characters"
+      splitBy="words"
       auto
       loop
     />

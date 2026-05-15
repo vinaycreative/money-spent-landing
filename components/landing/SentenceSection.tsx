@@ -6,22 +6,24 @@ export function SentenceSection() {
   const formFields = ["Amount", "Category", "Account", "Merchant", "Note", "Date"]
 
   return (
-    <section id="sentence" className="py-[120px]">
+    <section id="sentence" className="py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
-        <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em">
-          <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-em" />
-          Quick logging
-        </p>
-        <h2 className="lp-serif mt-4 text-[48px] font-semibold leading-[1.05] tracking-[-0.03em] text-lp-ink lg:text-[54px]">
-          Add spends like
-          <br />
-          writing a note.
-        </h2>
-        <p className="mt-6 max-w-[600px] text-xl leading-[1.5] text-lp-ink-soft">
-          One sentence, a few taps, and your expense/income is saved.
-        </p>
+        <div className="text-center sm:text-left">
+          <p className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0">
+            <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-em" />
+            Quick logging
+          </p>
+          <h2 className="lp-serif mt-4 text-[36px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-ink sm:text-[48px] lg:text-[54px]">
+            Add spends like
+            <br />
+            writing a note.
+          </h2>
+          <p className="mt-6 mx-auto max-w-[600px] text-lg leading-[1.5] text-lp-ink-soft sm:mx-0 sm:text-xl">
+            One sentence, a few taps, and your expense/income is saved.
+          </p>
+        </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 grid-cols-1 md:grid-cols-2">
           {/* Bad: old way */}
           <div className="flex flex-col rounded-[28px] bg-lp-bg-2 p-8 sm:p-10">
             <span className="mb-4 inline-flex w-fit rounded-full bg-[rgba(28,25,22,.06)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-lp-ink-mute">

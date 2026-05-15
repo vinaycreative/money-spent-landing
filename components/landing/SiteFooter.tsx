@@ -71,7 +71,7 @@ export function SiteFooter() {
               </p>
             </div>
 
-            <div className="mt-22 grid gap-8 sm:grid-cols-3 lg:gap-10">
+            <div className="mt-12 grid gap-8 sm:grid-cols-3 lg:gap-10">
               {cols.map(({ title, links }) => (
                 <div key={title}>
                   <h4 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-lp-footer-ink">
@@ -101,9 +101,9 @@ export function SiteFooter() {
             <span>Made with ❤️ in India</span>
           </div>
 
-          <div className="relative">
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-full max-h-64 w-full max-w-3xl rounded-full bg-slate-100 blur-[100px]" />
-            <h1 className="mt-6 text-center text-[clamp(1rem,15vw,10rem)] font-extrabold leading-[0.7] text-transparent [-webkit-text-stroke:1px_#D4D4D4]">
+          <div className="relative overflow-hidden">
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-full max-h-64 w-full max-w-3xl rounded-full bg-slate-100 blur-[100px] opacity-20" />
+            <h1 className="mt-6 text-center text-[clamp(2.5rem,15vw,10rem)] font-extrabold leading-[0.8] text-transparent [-webkit-text-stroke:1px_var(--lp-footer-line-strong)]">
               MoneySpent
             </h1>
           </div>

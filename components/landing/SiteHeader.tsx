@@ -31,7 +31,7 @@ export function SiteHeader() {
         {/* Nav */}
         <nav className="flex items-center gap-1">
           {/* Desktop-only links */}
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-1 lg:flex">
             {navLinks.map(([href, label]) => (
               <Link
                 key={href}
@@ -45,14 +45,16 @@ export function SiteHeader() {
           </div>
           <LpThemeToggle />
           {/* Always visible: theme toggle + CTA */}
-          <Link href="/login" className="lp-nav-link rounded-lg px-3.5 py-2 text-sm font-medium">
+          <Link href="/login" className="lp-nav-link hidden rounded-lg px-3.5 py-2 text-sm font-medium sm:inline-flex">
             Sign in
           </Link>
           <Link
             href="/onboarding"
-            className="lp-btn-primary ml-1 inline-flex min-h-10 items-center gap-1.5 rounded-full bg-lp-ink px-5 text-sm font-semibold text-lp-bg"
+            className="lp-btn-primary ml-1 inline-flex min-h-10 items-center gap-1.5 rounded-full bg-lp-ink px-4 text-[13px] font-semibold text-lp-bg sm:px-5 sm:text-sm"
           >
-            Try it free →
+            <span className="hidden sm:inline">Try it free</span>
+            <span className="inline sm:hidden">Try it</span>
+            <span className="hidden sm:inline">→</span>
           </Link>
         </nav>
       </div>

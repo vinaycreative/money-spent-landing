@@ -1,182 +1,141 @@
 "use client"
 
 import Link from "next/link"
+import { motion } from "motion/react"
 
 export function CtaSection() {
   return (
-    <section id="download" className="min-h-[800px] bg-lp-bg py-20 lg:py-[104px]">
+    <section id="download" className="relative isolate py-12 lg:py-20 overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
-        <div className="relative isolate grid items-center gap-12 overflow-hidden rounded-[36px] border border-lp-inv-border bg-lp-ink p-8 shadow-[0_32px_90px_rgba(0,0,0,0.16)] sm:p-10 lg:grid-cols-[1fr_auto] lg:gap-20 lg:p-14">
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 opacity-70"
+        <div className="relative isolate overflow-hidden rounded-[32px] border border-lp-inv-border bg-lp-ink px-6 py-12 text-center shadow-[0_32px_80px_rgba(0,0,0,0.2)] sm:rounded-[48px] sm:px-12 sm:py-16 lg:py-20">
+          {/* Enhanced Background Effects */}
+          <motion.div
+            animate={{
+              opacity: [0.3, 0.5, 0.3],
+              scale: [1, 1.05, 1],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute inset-0 -z-10"
             style={{
-              background:
-                "radial-gradient(circle at 78% 18%, var(--lp-em) 0 11%, transparent 30%), radial-gradient(circle at 20% 88%, var(--lp-peach) 0 8%, transparent 26%)",
+              background: `
+                radial-gradient(circle at 10% 20%, var(--lp-em) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, var(--lp-peach) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255,255,255,0.02) 0%, transparent 50%)
+              `,
             }}
           />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 opacity-[0.16]"
+          
+          {/* Mesh Noise Texture */}
+          <div 
+            className="absolute inset-0 -z-10 opacity-[0.02] mix-blend-overlay"
             style={{
-              backgroundImage: "radial-gradient(circle, var(--lp-bg) 1.2px, transparent 1.2px)",
-              backgroundSize: "22px 22px",
+              backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
             }}
-          />
-          <div
-            aria-hidden="true"
-            className="absolute -right-20 -top-24 -z-10 h-72 w-72 rounded-full border border-lp-inv-border"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute -bottom-28 left-1/2 -z-10 h-80 w-80 rounded-full border border-lp-inv-border"
           />
 
-          <div className="relative z-10">
-            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-peach">
-              <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-peach" />
-              Free for early users
-            </p>
-            <h2 className="lp-serif mt-4 text-[40px] font-semibold leading-[1.05] tracking-[-0.03em] text-lp-bg lg:text-[54px]">
-              Start tracking
+          {/* Floating Decorative Elements */}
+          <FloatingElement delay={0} className="left-[8%] top-[25%] text-2xl opacity-30">₹</FloatingElement>
+          <FloatingElement delay={1} className="right-[12%] top-[15%] text-xl opacity-20">$</FloatingElement>
+          <FloatingElement delay={0.5} className="left-[12%] bottom-[25%] text-xl opacity-20">€</FloatingElement>
+          <FloatingElement delay={1.5} className="right-[8%] bottom-[20%] text-3xl opacity-30">£</FloatingElement>
+
+          <div className="relative z-10 mx-auto max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="inline-flex items-center gap-2 rounded-full border border-lp-inv-border bg-white/5 px-3.5 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-lp-peach backdrop-blur-md">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lp-peach opacity-75"></span>
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-lp-peach"></span>
+                </span>
+                Secure & Private
+              </p>
+            </motion.div>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="lp-serif mt-6 text-[32px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-bg sm:text-[48px] lg:text-[60px]"
+            >
+              Start tracking your
               <br />
-              in under a minute.
-            </h2>
-            <p className="mt-4 max-w-md text-base leading-[1.6] text-lp-inv-muted">
+              wealth in under a minute.
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mt-6 mx-auto max-w-md text-base leading-relaxed text-lp-inv-muted sm:text-lg"
+            >
               Sign in with Google, add your first account, and log your first expense in under two
-              minutes. No card required.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+              minutes. Join the future of personal finance today.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-10 flex flex-wrap justify-center gap-3"
+            >
               <Link
                 href="/onboarding"
-                className="lp-btn-primary inline-flex min-h-12 items-center gap-2 rounded-full bg-lp-bg px-6 text-sm font-semibold text-lp-ink"
+                className="group relative inline-flex min-h-12 items-center gap-2 overflow-hidden rounded-full bg-lp-bg px-7 text-sm font-semibold text-lp-ink transition-all hover:scale-105 active:scale-95"
               >
-                Start free →
+                <span className="relative z-10 flex items-center gap-2">
+                  Get Started Now
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </span>
               </Link>
               <Link
                 href="/login"
-                className="inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-inv-border px-6 text-sm font-medium text-lp-inv-link transition hover:opacity-80"
+                className="inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-inv-border bg-white/5 px-7 text-sm font-medium text-lp-inv-link backdrop-blur-md transition-all hover:bg-white/10"
               >
-                Sign in
+                Sign in to account
               </Link>
-            </div>
-          </div>
+            </motion.div>
 
-          {/* CTA illustration */}
-          <div
-            className="relative hidden h-[300px] w-[320px] shrink-0 place-items-center lg:grid"
-            aria-hidden="true"
-          >
-            <svg viewBox="0 0 320 300" width="320" height="300">
-              <defs>
-                <radialGradient id="ctaCurrencyGlow" cx="50%" cy="50%" r="58%">
-                  <stop offset="0%" stopColor="var(--lp-em)" stopOpacity=".92" />
-                  <stop offset="62%" stopColor="var(--lp-em)" stopOpacity=".34" />
-                  <stop offset="100%" stopColor="var(--lp-em)" stopOpacity="0" />
-                </radialGradient>
-                <filter id="ctaCurrencyShadow" x="-30%" y="-30%" width="160%" height="160%">
-                  <feDropShadow dx="0" dy="18" stdDeviation="18" floodOpacity=".28" />
-                </filter>
-              </defs>
-
-              <circle cx="160" cy="150" r="126" fill="url(#ctaCurrencyGlow)" />
-              <circle
-                cx="160"
-                cy="150"
-                r="102"
-                fill="none"
-                stroke="var(--lp-bg)"
-                strokeWidth="1.5"
-                strokeDasharray="3 9"
-                opacity=".28"
-              />
-              <circle
-                cx="160"
-                cy="150"
-                r="72"
-                fill="var(--lp-em)"
-                filter="url(#ctaCurrencyShadow)"
-                opacity=".95"
-              />
-              <circle
-                cx="160"
-                cy="150"
-                r="58"
-                fill="none"
-                stroke="var(--lp-bg)"
-                strokeWidth="1.5"
-                strokeDasharray="4 7"
-                opacity=".32"
-              />
-              {["₹", "$", "€", "¥", "£", "₩"].map((symbol, index) => (
-                <text
-                  key={`center-${symbol}`}
-                  x="160"
-                  y="177"
-                  fontFamily="var(--font-fraunces), Georgia, serif"
-                  fontWeight="700"
-                  fontSize="78"
-                  fill="var(--lp-bg)"
-                  textAnchor="middle"
-                  letterSpacing="-2"
-                  opacity={index === 0 ? "1" : "0"}
-                >
-                  <animate
-                    attributeName="opacity"
-                    calcMode="discrete"
-                    dur="6s"
-                    repeatCount="indefinite"
-                    values={["₹", "$", "€", "¥", "£", "₩"]
-                      .map((_, symbolIndex) => (symbolIndex === index ? "1" : "0"))
-                      .join(";")}
-                  />
-                  {symbol}
-                </text>
-              ))}
-
-              <g>
-                <animateTransform
-                  attributeName="transform"
-                  type="rotate"
-                  from="0 160 150"
-                  to="360 160 150"
-                  dur="28s"
-                  repeatCount="indefinite"
-                />
-                {[
-                  { symbol: "$", x: 160, y: 32, fill: "var(--lp-peach)", color: "var(--lp-ink)" },
-                  { symbol: "€", x: 260, y: 88, fill: "var(--lp-bg)", color: "var(--lp-em)" },
-                  { symbol: "¥", x: 250, y: 210, fill: "var(--lp-peach)", color: "var(--lp-ink)" },
-                  { symbol: "£", x: 160, y: 270, fill: "var(--lp-bg)", color: "var(--lp-ink)" },
-                  { symbol: "₩", x: 60, y: 210, fill: "var(--lp-bg)", color: "var(--lp-em)" },
-                  { symbol: "฿", x: 50, y: 88, fill: "var(--lp-peach)", color: "var(--lp-ink)" },
-                ].map(({ symbol, x, y, fill, color }) => (
-                  <g key={symbol}>
-                    <circle cx={x} cy={y} r="21" fill={fill} opacity=".94" />
-                    <text
-                      x={x}
-                      y={y + 6}
-                      fontFamily="Inter, sans-serif"
-                      fontWeight="800"
-                      fontSize="16"
-                      fill={color}
-                      textAnchor="middle"
-                    >
-                      {symbol}
-                    </text>
-                  </g>
-                ))}
-              </g>
-
-              <g stroke="var(--lp-peach)" strokeWidth="2" strokeLinecap="round" opacity=".9">
-                <path d="M46 45 v10 M41 50 h10" />
-                <path d="M276 238 v10 M271 243 h10" />
-                <path d="M246 34 v8 M242 38 h8" />
-              </g>
-            </svg>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="mt-8 text-[10px] font-medium uppercase tracking-widest text-lp-inv-muted/40"
+            >
+              No credit card required · Join 10k+ users
+            </motion.p>
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function FloatingElement({ children, className, delay = 0 }: { children: React.ReactNode, className: string, delay?: number }) {
+  return (
+    <motion.div
+      initial={{ y: 0 }}
+      animate={{ y: [0, -20, 0] }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay
+      }}
+      className={`absolute hidden font-serif font-bold text-lp-bg lg:block ${className}`}
+    >
+      {children}
+    </motion.div>
   )
 }

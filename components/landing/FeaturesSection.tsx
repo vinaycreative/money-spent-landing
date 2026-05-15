@@ -180,25 +180,25 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="bg-lp-bg py-[120px]">
+    <section id="features" className="bg-lp-bg py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
-          <div>
-            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em">
+          <div className="text-center sm:text-left">
+            <p className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0">
               <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-em" />
               Built around daily use
             </p>
-            <h2 className="lp-serif mt-4 max-w-[520px] text-[44px] font-semibold leading-[1.05] tracking-[-0.03em] text-lp-ink lg:text-[54px]">
+            <h2 className="lp-serif mt-4 max-w-[520px] text-[36px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-ink sm:text-[44px] lg:text-[54px]">
               Six views. One simple money habit.
             </h2>
           </div>
-          <p className="max-w-sm text-base leading-[1.6] text-lp-ink-mute">
+          <p className="mx-auto max-w-sm text-center text-base leading-[1.6] text-lp-ink-mute sm:mx-0 sm:text-left">
             From quick entries to category drill-downs, Money Spent keeps the important money
             questions close without turning tracking into another chore.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {features.map(({ title, desc, svg }) => (
             <article
               key={title}

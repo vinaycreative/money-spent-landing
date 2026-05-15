@@ -6,6 +6,9 @@ import { SentenceSection } from "@/components/landing/SentenceSection"
 import { FeaturesSection } from "@/components/landing/FeaturesSection"
 import { ScreenGallery } from "@/components/landing/ScreenGallery"
 import { StatsSection } from "@/components/landing/StatsSection"
+import { FreeSection } from "@/components/landing/FreeSection"
+import { FaqSection } from "@/components/landing/FaqSection"
+import { faq } from "@/constant/faq"
 import { CtaSection } from "@/components/landing/CtaSection"
 import { SiteFooter } from "@/components/landing/SiteFooter"
 
@@ -39,38 +42,7 @@ export const metadata: Metadata = {
   },
 }
 
-const faq = [
-  {
-    question: "What is MoneySpent used for?",
-    answer:
-      "MoneySpent is used to track daily expenses, income, account balances, budgets, and spending insights in one personal finance dashboard.",
-  },
-  {
-    question: "Is MoneySpent free?",
-    answer:
-      "Yes. MoneySpent has a $0 free forever plan for personal money tracking, including expense entries, accounts, categories, and analytics.",
-  },
-  {
-    question: "How fast can I add an expense?",
-    answer:
-      "You can add an expense in a few taps: choose Add Expense, enter the amount, select an account and category, add a note if needed, and save.",
-  },
-  {
-    question: "Does MoneySpent track accounts and balances?",
-    answer:
-      "Yes. MoneySpent can track cash, bank accounts, wallets, and cards together, then update balances when expenses or income are saved.",
-  },
-  {
-    question: "Does MoneySpent show spending analytics?",
-    answer:
-      "Yes. MoneySpent shows spending totals, income, savings, top categories, category percentages, and transaction history for the selected period.",
-  },
-  {
-    question: "Who should use MoneySpent?",
-    answer:
-      "MoneySpent is for people who want a simple personal expense tracker without maintaining a spreadsheet or complicated accounting software.",
-  },
-]
+
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -118,6 +90,8 @@ export default function Home() {
       <FeaturesSection />
       <ScreenGallery />
       <StatsSection />
+      <FreeSection />
+      <FaqSection />
       <CtaSection />
       <SiteFooter />
     </main>

@@ -11,38 +11,40 @@ export function ScreenGallery() {
   ]
 
   return (
-    <section className="overflow-hidden bg-lp-ink py-[140px] text-lp-bg">
+    <section className="overflow-hidden bg-lp-ink py-16 lg:py-[140px] text-lp-bg">
       <div className="mx-auto max-w-[1280px] px-6 text-center sm:px-10">
         <p className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-peach">
           <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-peach" />
           The whole app
         </p>
-        <h2 className="lp-serif mx-auto mt-4 max-w-[640px] text-[44px] font-semibold leading-[1.05] tracking-[-0.03em] text-lp-bg lg:text-[54px]">
+        <h2 className="lp-serif mx-auto mt-4 max-w-[640px] text-[36px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-bg sm:text-[44px] lg:text-[54px]">
           Built for the way
           <br />
           real people spend.
         </h2>
-        <p className="mx-auto mt-6 max-w-[480px] text-xl leading-[1.5] text-lp-inv-muted">
+        <p className="mx-auto mt-6 max-w-[480px] text-lg leading-[1.5] text-lp-inv-muted sm:text-xl">
           Three taps to log. One tap to see where it went. Zero seconds wasted in setup screens.
         </p>
 
-        <div className="mt-16 flex items-end justify-center gap-4 sm:gap-6">
-          {phones.map(({ alt, pos, sheet }) => (
-            <div
-              key={alt}
-              className={`lp-gallery-phone ${pos} relative shrink-0 overflow-hidden rounded-3xl bg-lp-ink p-[10px] shadow-[0_40px_90px_rgba(0,0,0,.45),0_0_0_1.5px_rgba(255,255,255,.08)] w-[clamp(280px,22vw,280px)] h-[clamp(480px,46vw,520px)]`}
-            >
-              <div className="relative h-full w-full overflow-hidden rounded-2xl bg-lp-bg">
-                <div className="absolute left-1/2 top-2 z-30 h-[clamp(14px,2.4vw,22px)] w-[clamp(42px,7vw,72px)] -translate-x-1/2 rounded-[20px] bg-lp-ink" />
-                <div className="absolute inset-0 overflow-hidden">
-                  <div className="origin-top-left h-[147%] w-[147%] scale-[0.68]">
-                    <DummyDashboard />
+        <div className="mt-16 flex items-end justify-start gap-6 overflow-x-auto pb-12 sm:justify-center sm:overflow-visible sm:pb-0 scrollbar-hide">
+          <div className="flex shrink-0 items-end gap-6 px-4 sm:px-0">
+            {phones.map(({ alt, pos, sheet }) => (
+              <div
+                key={alt}
+                className={`lp-gallery-phone ${pos} relative shrink-0 overflow-hidden rounded-[32px] bg-lp-ink p-2 shadow-[0_40px_90px_rgba(0,0,0,.45),0_0_0_1.5px_rgba(255,255,255,.08)] w-[260px] h-[480px] sm:w-[clamp(280px,22vw,280px)] sm:h-[clamp(480px,46vw,520px)] sm:rounded-3xl sm:p-[10px]`}
+              >
+                <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-lp-bg sm:rounded-2xl">
+                  <div className="absolute left-1/2 top-2 z-30 h-[16px] w-[60px] -translate-x-1/2 rounded-[20px] bg-lp-ink sm:h-[clamp(14px,2.4vw,22px)] sm:w-[clamp(42px,7vw,72px)]" />
+                  <div className="absolute inset-0 overflow-hidden">
+                    <div className="origin-top-left h-[147%] w-[147%] scale-[0.68]">
+                      <DummyDashboard />
+                    </div>
                   </div>
+                  {sheet ? <GallerySheetPreview type={sheet} /> : null}
                 </div>
-                {sheet ? <GallerySheetPreview type={sheet} /> : null}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
