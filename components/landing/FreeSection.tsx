@@ -14,7 +14,7 @@ export function FreeSection() {
   ]
 
   return (
-    <section id="pricing" className="bg-lp-bg py-24 lg:py-32">
+    <section id="pricing" className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="relative isolate overflow-hidden rounded-[48px] border border-lp-line bg-lp-card p-8 sm:p-12 lg:p-20">
           {/* Background pattern */}

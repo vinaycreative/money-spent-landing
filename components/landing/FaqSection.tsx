@@ -10,7 +10,7 @@ export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <section className="bg-lp-bg py-24 lg:py-32">
+    <section className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1200px] px-6 sm:px-10">
         <div className="mb-16 text-center">
           <p className="flex items-center justify-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-lp-em">

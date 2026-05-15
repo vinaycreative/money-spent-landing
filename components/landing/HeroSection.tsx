@@ -6,7 +6,7 @@ import DummyDashboard from "@/components/DummyDashboard"
 
 export function HeroSection() {
   return (
-    <section className="overflow-hidden py-12 lg:py-24">
+    <section className="overflow-hidden pt-12 pb-12 lg:pt-20 lg:pb-20">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
           {/* Left: copy */}

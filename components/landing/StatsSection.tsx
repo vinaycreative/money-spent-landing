@@ -7,7 +7,7 @@ export function StatsSection() {
     { n: "100%", label: "On-device data\nEnd-to-end private" },
   ]
   return (
-    <section className="bg-lp-bg py-20 lg:py-32">
+    <section className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr] lg:items-center">
           <div className="text-center lg:text-left">

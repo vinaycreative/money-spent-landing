@@ -180,7 +180,7 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="bg-lp-bg py-16 lg:py-[120px]">
+    <section id="features" className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
           <div className="text-center sm:text-left">

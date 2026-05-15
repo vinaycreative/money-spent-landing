@@ -6,7 +6,7 @@ export function SentenceSection() {
   const formFields = ["Amount", "Category", "Account", "Merchant", "Note", "Date"]
 
   return (
-    <section id="sentence" className="py-16 lg:py-[120px]">
+    <section id="sentence" className="py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="text-center sm:text-left">
           <p className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0">

@@ -11,7 +11,7 @@ export function ScreenGallery() {
   ]
 
   return (
-    <section className="overflow-hidden bg-lp-ink py-16 lg:py-[140px] text-lp-bg">
+    <section className="overflow-hidden bg-lp-ink py-16 lg:py-24 text-lp-bg">
       <div className="mx-auto max-w-[1280px] px-6 text-center sm:px-10">
         <p className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-peach">
           <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-peach" />

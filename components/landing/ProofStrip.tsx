@@ -16,7 +16,7 @@ export function ProofStrip() {
     { icon: Clock3, bold: "2 min", rest: " to set up accounts and categories" },
   ]
   return (
-    <div className="border-y border-lp-line bg-lp-bg py-8 lg:py-12">
+    <div className="border-y border-lp-line bg-lp-bg py-8 lg:py-10">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 text-[13px] font-medium text-lp-ink-mute">
           {items.map((item, i) => {
