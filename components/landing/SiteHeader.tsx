@@ -3,7 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { LpThemeToggle } from "@/components/LpThemeToggle"
-import { motion } from "motion/react"
 
 export function SiteHeader() {
   const navLinks = [
@@ -12,10 +11,7 @@ export function SiteHeader() {
   ] as const
 
   return (
-    <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+    <header
       className="sticky top-0 z-50 border-b border-lp-line bg-lp-header-bg backdrop-blur-lg backdrop-saturate-[1.5]"
     >
       <div className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between px-6 sm:px-10">
@@ -68,7 +64,7 @@ export function SiteHeader() {
           </Link>
         </nav>
       </div>
-    </motion.header>
+    </header>
   )
 }
 

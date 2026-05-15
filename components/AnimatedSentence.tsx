@@ -69,6 +69,7 @@ export function AnimatedSentence() {
                 transform: active ? "scale(1.13)" : "scale(1)",
                 backgroundColor: active ? seg.bg : "transparent",
                 boxShadow: active ? `0 0 0 7px ${seg.bg}` : `0 0 0 0px ${seg.bg}`,
+                willChange: "transform, background-color, box-shadow",
               }}
             >
               {seg.text}

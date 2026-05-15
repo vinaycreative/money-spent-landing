@@ -5,27 +5,115 @@ import { addDays, differenceInCalendarDays, isToday, startOfDay, subDays } from 
 import { Calendar, ChevronLeft, ChevronRight, TrendingDown, TrendingUp } from "lucide-react"
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { formatMoney } from "@/lib/money"
 import PageHeader from "@/components/layouts/PageHeader"
 import TransactionCard from "@/components/cards/Transaction"
-import { AddExpenseSheet } from "@/components/sheet/AddExpenseSheet"
-import { AddIncomeSheet } from "@/components/sheet/AddIncomeSheet"
-import data from "@/constant/transaction.json"
+const AddExpenseSheet = dynamic(() => import("@/components/sheet/AddExpenseSheet").then(mod => mod.AddExpenseSheet), { ssr: false })
+const AddIncomeSheet = dynamic(() => import("@/components/sheet/AddIncomeSheet").then(mod => mod.AddIncomeSheet), { ssr: false })
 import { Transaction } from "@/types/Transaction"
+
+const MOCK_TRANSACTIONS: Transaction[] = [
+  {
+    id: "1",
+    user_id: "u1",
+    account_id: "a1",
+    category_id: "c1",
+    type: "expense",
+    amount: 150,
+    currency: "INR",
+    title: "Coffee",
+    description: "",
+    occurred_at: new Date().toISOString(),
+    related_transfer_id: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    categories: { id: "c1", icon: "🏖️", kind: "expense", name: "Drink", color: "bg-indigo-400" },
+    accounts: { id: "a1", name: "SBI", type: "credit" }
+  },
+  {
+    id: "2",
+    user_id: "u1",
+    account_id: "a2",
+    category_id: "c2",
+    type: "expense",
+    amount: 50,
+    currency: "INR",
+    title: "Snacks",
+    description: "",
+    occurred_at: new Date().toISOString(),
+    related_transfer_id: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    categories: { id: "c2", icon: "🍔", kind: "expense", name: "Food", color: "bg-yellow-400" },
+    accounts: { id: "a2", name: "Fi", type: "bank" }
+  },
+  {
+    id: "3",
+    user_id: "u1",
+    account_id: "a2",
+    category_id: "c3",
+    type: "expense",
+    amount: 200,
+    currency: "INR",
+    title: "Medicine",
+    description: "",
+    occurred_at: new Date().toISOString(),
+    related_transfer_id: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    categories: { id: "c3", icon: "🏥", kind: "expense", name: "Health", color: "bg-red-400" },
+    accounts: { id: "a2", name: "Fi", type: "bank" }
+  },
+  {
+    id: "4",
+    user_id: "u1",
+    account_id: "a2",
+    category_id: "c4",
+    type: "expense",
+    amount: 100,
+    currency: "INR",
+    title: "Groceries",
+    description: "",
+    occurred_at: new Date().toISOString(),
+    related_transfer_id: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    categories: { id: "c4", icon: "🛒", kind: "expense", name: "Shopping", color: "bg-purple-400" },
+    accounts: { id: "a2", name: "Fi", type: "bank" }
+  },
+  {
+    id: "5",
+    user_id: "u1",
+    account_id: "a2",
+    category_id: "c5",
+    type: "income",
+    amount: 65000,
+    currency: "INR",
+    title: "Salary",
+    description: "",
+    occurred_at: new Date().toISOString(),
+    related_transfer_id: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    categories: { id: "c5", icon: "💰", kind: "income", name: "Salary", color: "bg-emerald-400" },
+    accounts: { id: "a2", name: "Fi", type: "bank" }
+  }
+]
 
 const DummyDashboard = ({ interactive = false }: { interactive?: boolean }) => {
   const [selectedDate, setSelectedDate] = useState(() => startOfDay(new Date()))
   const [expenseSheetOpen, setExpenseSheetOpen] = useState(false)
   const [incomeSheetOpen, setIncomeSheetOpen] = useState(false)
-  const allTransactions = data as Transaction[]
 
-  const dayOffset = differenceInCalendarDays(startOfDay(new Date()), selectedDate)
-  const rotation = allTransactions.length ? Math.abs(dayOffset * 7) % allTransactions.length : 0
-  const visibleCount = Math.max(4, allTransactions.length - (Math.abs(dayOffset) % 8) * 9)
+  const dayOffset = Math.abs(differenceInCalendarDays(startOfDay(new Date()), selectedDate))
+  const rotation = dayOffset % MOCK_TRANSACTIONS.length
+  
+  // Deterministic subset based on date to simulate variety without huge DOM
   const transactions = [
-    ...allTransactions.slice(rotation),
-    ...allTransactions.slice(0, rotation),
-  ].slice(0, visibleCount)
+    ...MOCK_TRANSACTIONS.slice(rotation),
+    ...MOCK_TRANSACTIONS.slice(0, rotation),
+  ].slice(0, 5) // Always show exactly 5 for consistency and performance
 
   const totalExpenses = transactions
     .filter((t) => t.type === "expense")

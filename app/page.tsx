@@ -6,14 +6,30 @@ import { ProofStrip } from "@/components/landing/ProofStrip"
 import { faq } from "@/constant/faq"
 
 // Below the fold components
-const SentenceSection = dynamic(() => import("@/components/landing/SentenceSection").then(mod => mod.SentenceSection))
-const FeaturesSection = dynamic(() => import("@/components/landing/FeaturesSection").then(mod => mod.FeaturesSection))
-const ScreenGallery = dynamic(() => import("@/components/landing/ScreenGallery").then(mod => mod.ScreenGallery))
-const StatsSection = dynamic(() => import("@/components/landing/StatsSection").then(mod => mod.StatsSection))
-const FreeSection = dynamic(() => import("@/components/landing/FreeSection").then(mod => mod.FreeSection))
-const FaqSection = dynamic(() => import("@/components/landing/FaqSection").then(mod => mod.FaqSection))
-const CtaSection = dynamic(() => import("@/components/landing/CtaSection").then(mod => mod.CtaSection))
-const SiteFooter = dynamic(() => import("@/components/landing/SiteFooter").then(mod => mod.SiteFooter))
+const SentenceSection = dynamic(() =>
+  import("@/components/landing/SentenceSection").then((mod) => mod.SentenceSection),
+)
+const FeaturesSection = dynamic(() =>
+  import("@/components/landing/FeaturesSection").then((mod) => mod.FeaturesSection),
+)
+const ScreenGallery = dynamic(() =>
+  import("@/components/landing/ScreenGallery").then((mod) => mod.ScreenGallery),
+)
+const StatsSection = dynamic(() =>
+  import("@/components/landing/StatsSection").then((mod) => mod.StatsSection),
+)
+const FreeSection = dynamic(() =>
+  import("@/components/landing/FreeSection").then((mod) => mod.FreeSection),
+)
+const FaqSection = dynamic(() =>
+  import("@/components/landing/FaqSection").then((mod) => mod.FaqSection),
+)
+const CtaSection = dynamic(() =>
+  import("@/components/landing/CtaSection").then((mod) => mod.CtaSection),
+)
+const SiteFooter = dynamic(() =>
+  import("@/components/landing/SiteFooter").then((mod) => mod.SiteFooter),
+)
 
 export const metadata: Metadata = {
   title: "MoneySpent | Simple Personal Finance & Expense Tracker",
@@ -44,8 +60,6 @@ export const metadata: Metadata = {
       "A clean personal finance app for expense tracking, budgets, accounts, and spending insights.",
   },
 }
-
-
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -92,7 +106,7 @@ export default function Home() {
       <SentenceSection />
       <FeaturesSection />
       <ScreenGallery />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <FreeSection />
       <FaqSection />
       <CtaSection />
