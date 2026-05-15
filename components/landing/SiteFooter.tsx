@@ -10,27 +10,26 @@ export function SiteFooter() {
       title: "Product",
       links: [
         ["#features", "Features"],
-        ["#sentence", "How it works"],
+        ["#how-it-works", "How it works"],
         ["/onboarding", "Get started"],
         ["/login", "Sign in"],
       ],
     },
+    // {
+    //   title: "Resources",
+    //   links: [
+    //     ["#", "Help Center"],
+    //     ["#", "Blog"],
+    //     ["#", "Contact Support"],
+    //     ["#", "System Status"],
+    //   ],
+    // },
     {
-      title: "Explore",
+      title: "Legal",
       links: [
-        ["#features", "Dashboard"],
-        ["#features", "Analytics"],
-        ["#sentence", "Budget flow"],
-        ["https://vinaycreative.com/", "Creator"],
-      ],
-    },
-    {
-      title: "Trust",
-      links: [
-        ["#", "Private by design"],
-        ["#", "No card required"],
-        ["#", "Free for early users"],
-        ["#", "Made in Bangalore"],
+        ["#", "Privacy Policy"],
+        ["#", "Terms of Service"],
+        ["#", "Cookie Policy"],
       ],
     },
   ]
@@ -62,12 +61,9 @@ export function SiteFooter() {
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <div className="grid gap-10 lg:grid-cols-[1.35fr_1fr] lg:gap-16">
+          <div className="grid gap-10 lg:grid-cols-[1.7fr_1fr] lg:gap-16">
             <motion.div variants={itemVariants}>
-              <Link
-                href="/"
-                className="group inline-flex items-center gap-3"
-              >
+              <Link href="/" className="group inline-flex items-center gap-3">
                 <span className="grid size-11 place-items-center rounded-2xl border border-lp-footer-line bg-lp-footer-logo-bg">
                   <Image
                     src="/logo.svg"
@@ -94,7 +90,7 @@ export function SiteFooter() {
               </p>
             </motion.div>
 
-            <div className="mt-12 grid gap-8 sm:grid-cols-3 lg:gap-10">
+            <div className="mt-12 grid gap-8 grid-cols-2 lg:gap-10">
               {cols.map(({ title, links }) => (
                 <motion.div key={title} variants={itemVariants}>
                   <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-lp-footer-ink">
@@ -121,14 +117,25 @@ export function SiteFooter() {
 
           <motion.div
             variants={itemVariants}
-            className="mt-10 flex flex-col gap-3 border-t border-lp-footer-line py-5 text-sm font-medium text-lp-footer-muted sm:flex-row sm:items-center sm:justify-between"
+            className="relative mt-10 flex flex-col gap-4 border-t border-lp-footer-line py-6 text-center text-sm text-lp-footer-muted sm:flex-row sm:text-left sm:items-center sm:justify-between"
           >
-            <span>© 2026 MoneySpent. All Right Reserved.</span>
-            <span>Made with ❤️ in India</span>
+            <p>© {new Date().getFullYear()} MoneySpent. All rights reserved.</p>
+            <p className="sm:absolute sm:left-1/2 sm:-translate-x-1/2">Made with ❤️ in India</p>
+            <p>
+              Developed by{" "}
+              <Link
+                href="https://vinaycreative.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-lp-footer-ink hover:underline"
+              >
+                vinaycreative
+              </Link>
+            </p>
           </motion.div>
 
           <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-full max-h-64 w-full max-w-3xl rounded-full bg-slate-100 blur-[100px] opacity-20" />
+            {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-full max-h-64 w-full max-w-3xl rounded-full bg-lp-footer-word blur-[120px] dark:hidden" /> */}
             <motion.div
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -145,4 +152,3 @@ export function SiteFooter() {
     </footer>
   )
 }
-
