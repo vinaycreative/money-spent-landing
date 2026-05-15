@@ -11,8 +11,8 @@ export function SiteFooter() {
       links: [
         ["#features", "Features"],
         ["#how-it-works", "How it works"],
-        ["/onboarding", "Get started"],
-        ["/login", "Sign in"],
+        ["https://my.moneyspent.app/onboarding", "Get started"],
+        ["https://my.moneyspent.app", "Sign in"],
       ],
     },
     // {
@@ -27,9 +27,9 @@ export function SiteFooter() {
     {
       title: "Legal",
       links: [
-        ["#", "Privacy Policy"],
-        ["#", "Terms of Service"],
-        ["#", "Cookie Policy"],
+        ["/privacy", "Privacy Policy"],
+        ["/terms", "Terms of Service"],
+        ["/cookies", "Cookie Policy"],
       ],
     },
   ]
@@ -64,7 +64,7 @@ export function SiteFooter() {
           <div className="grid gap-10 lg:grid-cols-[1.7fr_1fr] lg:gap-16">
             <motion.div variants={itemVariants}>
               <Link href="/" className="group inline-flex items-center gap-3">
-                <span className="grid size-11 place-items-center rounded-2xl border border-lp-footer-line bg-lp-footer-logo-bg">
+                <span className="grid size-11 place-items-center rounded-md border border-lp-footer-line bg-lp-footer-logo-bg">
                   <Image
                     src="/logo.svg"
                     alt=""
@@ -90,7 +90,7 @@ export function SiteFooter() {
               </p>
             </motion.div>
 
-            <div className="mt-12 grid gap-8 grid-cols-2 lg:gap-10">
+            <div className="mt-16 grid gap-8 grid-cols-2 lg:gap-10">
               {cols.map(({ title, links }) => (
                 <motion.div key={title} variants={itemVariants}>
                   <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-lp-footer-ink">

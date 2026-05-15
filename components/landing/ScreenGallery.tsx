@@ -101,6 +101,31 @@ export function ScreenGallery() {
                 transition={{ duration: 1.5, ease: "easeInOut", delay: 0.2 }}
                 viewport={{ once: true }}
               />
+              {/* Bottom Curvy Line */}
+              <motion.path
+                d="M-200 560C400 560 550 360 720 360C890 360 1040 560 1640 560"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-lp-line"
+                strokeDasharray="2 6"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1.5, ease: "easeInOut", delay: 0.3 }}
+                viewport={{ once: true }}
+              />
+              {/* Accent Curvy Line */}
+              <motion.path
+                d="M-200 600C300 600 500 400 720 400C940 400 1140 600 1640 600"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="text-lp-em opacity-70"
+                strokeDasharray="1 8"
+                strokeLinecap="round"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1.5, ease: "easeInOut", delay: 0.35 }}
+                viewport={{ once: true }}
+              />
               {/* Baseline */}
               <motion.line 
                 x1="-200" y1="680" x2="1640" y2="680" 

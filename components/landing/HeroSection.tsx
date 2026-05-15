@@ -4,7 +4,9 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import { RotatingWord } from "@/components/RotatingWord"
 
-const DashboardPreview = dynamic(() => import("@/components/landing/DashboardPreview").then(mod => mod.DashboardPreview))
+const DashboardPreview = dynamic(() =>
+  import("@/components/landing/DashboardPreview").then((mod) => mod.DashboardPreview),
+)
 
 export function HeroSection() {
   return (
