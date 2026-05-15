@@ -40,7 +40,7 @@ const BankCard = React.forwardRef<HTMLButtonElement, BankCardProps>(
 
         {/* Balance */}
         <div className="text-right shrink-0">
-          <p className="font-bold text-sm text-ink">
+          <p className="font-bold text-sm text-ink" suppressHydrationWarning>
             {showBalances ? formatMoney(account.current_balance) : "••••"}
           </p>
           <p className="text-[10px] text-ms-muted font-medium mt-0.5">

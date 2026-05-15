@@ -31,29 +31,24 @@ const WORDS = [
 
 export function AnimatedSentence() {
   const [activeIdx, setActiveIdx] = useState<number | null>(null)
-  const timers = useRef<ReturnType<typeof setTimeout>[]>([])
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     function go(idx: number) {
       setActiveIdx(idx)
 
-      const t1 = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         setActiveIdx(null)
-        const next  = (idx + 1) % WORDS.length
-        const gap   = next === 0 ? 2000 : 420
-        const t2    = setTimeout(() => go(next), gap)
-        timers.current.push(t2)
+        const next = (idx + 1) % WORDS.length
+        const gap = next === 0 ? 2000 : 420
+        timerRef.current = setTimeout(() => go(next), gap)
       }, 800)
-
-      timers.current.push(t1)
     }
 
-    const boot = setTimeout(() => go(0), 600)
-    timers.current.push(boot)
+    timerRef.current = setTimeout(() => go(0), 600)
 
     return () => {
-      timers.current.forEach(clearTimeout)
-      timers.current = []
+      if (timerRef.current) clearTimeout(timerRef.current)
     }
   }, [])
 
@@ -70,10 +65,10 @@ export function AnimatedSentence() {
             <span
               className="lp-sent-word"
               style={{
-                color:           seg.color,
-                transform:       active ? "scale(1.13)"          : "scale(1)",
-                backgroundColor: active ? seg.bg                 : "transparent",
-                boxShadow:       active ? `0 0 0 7px ${seg.bg}`  : "none",
+                color: seg.color,
+                transform: active ? "scale(1.13)" : "scale(1)",
+                backgroundColor: active ? seg.bg : "transparent",
+                boxShadow: active ? `0 0 0 7px ${seg.bg}` : `0 0 0 0px ${seg.bg}`,
               }}
             >
               {seg.text}

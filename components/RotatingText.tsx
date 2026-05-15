@@ -84,7 +84,10 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
     }
 
     const elements = useMemo(() => {
-      const currentText: string = texts[currentTextIndex]
+      if (!texts || texts.length === 0) return []
+      const index = Math.min(currentTextIndex, texts.length - 1)
+      const currentText: string = texts[index] || ""
+
       if (splitBy === "characters") {
         const words = currentText.split(" ")
         return words.map((word, i) => ({

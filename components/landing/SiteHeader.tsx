@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { LpThemeToggle } from "@/components/LpThemeToggle"
+import { motion } from "motion/react"
 
 export function SiteHeader() {
   const navLinks = [
@@ -11,15 +12,21 @@ export function SiteHeader() {
   ] as const
 
   return (
-    <header className="sticky top-0 z-50 border-b border-lp-line bg-lp-header-bg backdrop-blur-lg backdrop-saturate-[1.5]">
+    <motion.header
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="sticky top-0 z-50 border-b border-lp-line bg-lp-header-bg backdrop-blur-lg backdrop-saturate-[1.5]"
+    >
       <div className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between px-6 sm:px-10">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-2.5" aria-label="MoneySpent home">
+        <Link href="/" className="group flex items-center gap-2.5">
           <Image
             src="/logo.svg"
-            alt="MoneySpent"
+            alt=""
             width={32}
             height={32}
+            priority
             className="transition duration-300 group-hover:rotate-6 group-hover:scale-110"
           />
           <span className="text-[19px] tracking-tight text-lp-ink">
@@ -45,7 +52,10 @@ export function SiteHeader() {
           </div>
           <LpThemeToggle />
           {/* Always visible: theme toggle + CTA */}
-          <Link href="/login" className="lp-nav-link hidden rounded-lg px-3.5 py-2 text-sm font-medium sm:inline-flex">
+          <Link
+            href="/login"
+            className="lp-nav-link hidden rounded-lg px-3.5 py-2 text-sm font-medium sm:inline-flex"
+          >
             Sign in
           </Link>
           <Link
@@ -58,6 +68,7 @@ export function SiteHeader() {
           </Link>
         </nav>
       </div>
-    </header>
+    </motion.header>
   )
 }
+

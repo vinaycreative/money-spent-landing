@@ -1,12 +1,15 @@
 "use client"
 
+import { motion, type Variants } from "motion/react"
+
 export function FeaturesSection() {
   const features = [
     {
       title: "Fast daily logging",
       desc: "Add an expense or income from the dashboard, pick the account and category, and get back to your day.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Daily logging illustration</title>
           <rect
             x="20"
             y="30"
@@ -37,7 +40,8 @@ export function FeaturesSection() {
       title: "Today, at a glance",
       desc: "Open to the day that matters. See today's spend, move between dates, and review every transaction in one place.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Dashboard and date navigation illustration</title>
           <rect
             x="32"
             y="28"
@@ -68,7 +72,8 @@ export function FeaturesSection() {
       title: "Category insights",
       desc: "See where the money went by category, then tap any category for its total, monthly trend, and matching transactions.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Category spending chart illustration</title>
           <circle
             cx="100"
             cy="60"
@@ -88,7 +93,8 @@ export function FeaturesSection() {
       title: "Searchable spend history",
       desc: "Search transactions, filter by date, account, or type, and switch between a clean list and compact calendar-style view.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Calendar and history view illustration</title>
           <rect
             x="38"
             y="28"
@@ -108,23 +114,53 @@ export function FeaturesSection() {
             fill="var(--lp-ink)"
             textAnchor="middle"
           >
-            <text x="55" y="62">M</text>
-            <text x="72" y="62">T</text>
-            <text x="89" y="62">W</text>
-            <text x="106" y="62">T</text>
-            <text x="123" y="62">F</text>
-            <text x="55" y="78">1</text>
-            <text x="72" y="78">2</text>
+            <text x="55" y="62">
+              M
+            </text>
+            <text x="72" y="62">
+              T
+            </text>
+            <text x="89" y="62">
+              W
+            </text>
+            <text x="106" y="62">
+              T
+            </text>
+            <text x="123" y="62">
+              F
+            </text>
+            <text x="55" y="78">
+              1
+            </text>
+            <text x="72" y="78">
+              2
+            </text>
             <circle cx="89" cy="76" r="8" fill="var(--lp-em)" />
-            <text x="89" y="78" fill="white">3</text>
-            <text x="106" y="78">4</text>
-            <text x="123" y="78">5</text>
-            <text x="55" y="94">6</text>
+            <text x="89" y="78" fill="white">
+              3
+            </text>
+            <text x="106" y="78">
+              4
+            </text>
+            <text x="123" y="78">
+              5
+            </text>
+            <text x="55" y="94">
+              6
+            </text>
             <circle cx="72" cy="92" r="8" fill="var(--lp-peach)" />
-            <text x="72" y="94">7</text>
-            <text x="89" y="94">8</text>
-            <text x="106" y="94">9</text>
-            <text x="123" y="94">10</text>
+            <text x="72" y="94">
+              7
+            </text>
+            <text x="89" y="94">
+              8
+            </text>
+            <text x="106" y="94">
+              9
+            </text>
+            <text x="123" y="94">
+              10
+            </text>
           </g>
         </svg>
       ),
@@ -133,7 +169,8 @@ export function FeaturesSection() {
       title: "All your accounts",
       desc: "Track cash, bank, wallet, and credit accounts side by side. Balances update as you add, edit, or remove transactions.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Multiple accounts and balances illustration</title>
           <rect
             x="40"
             y="44"
@@ -156,7 +193,8 @@ export function FeaturesSection() {
       title: "Built for control",
       desc: "Hide balances when needed, customize themes and categories, and keep your records portable with import and export tools.",
       svg: (
-        <svg width="200" height="120" viewBox="0 0 200 120">
+        <svg width="200" height="120" viewBox="0 0 200 120" role="img">
+          <title>Security and portability illustration</title>
           <path
             d="M100 20 L130 32 V64 C130 82 117 96 100 102 C83 96 70 82 70 64 V32 Z"
             fill="var(--lp-card)"
@@ -179,10 +217,31 @@ export function FeaturesSection() {
     },
   ]
 
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  }
+
   return (
     <section id="features" className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
-        <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
+        <motion.div
+          className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="text-center sm:text-left">
             <p className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0">
               <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-em" />
@@ -196,26 +255,33 @@ export function FeaturesSection() {
             From quick entries to category drill-downs, Money Spent keeps the important money
             questions close without turning tracking into another chore.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="mt-14 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          className="mt-14 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {features.map(({ title, desc, svg }) => (
-            <article
+            <motion.article
               key={title}
-              className="lp-feat flex flex-col gap-5 rounded-[28px] bg-lp-card p-8"
+              variants={itemVariants}
+              whileHover={{ y: -8, transition: { duration: 0.3, ease: "easeInOut" } }}
+              className="lp-feat flex flex-col gap-5 rounded-[28px] bg-lp-card p-8 shadow-sm transition-shadow hover:shadow-xl dark:hover:shadow-black/20"
+              style={{ willChange: "transform" }}
             >
               <div className="flex h-[140px] items-center justify-center rounded-[18px] bg-lp-bg">
                 {svg}
               </div>
               <div>
                 <h3 className="lp-serif text-xl font-semibold text-lp-ink">{title}</h3>
-                <p className="mt-2 text-[14px] leading-[1.55] text-lp-ink-mute">
-                  {desc}
-                </p>
+                <p className="mt-2 text-[14px] leading-[1.55] text-lp-ink-mute">{desc}</p>
               </div>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

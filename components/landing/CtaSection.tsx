@@ -10,10 +10,12 @@ export function CtaSection() {
         <div className="relative isolate overflow-hidden rounded-[32px] border border-lp-inv-border bg-lp-ink px-6 py-12 text-center shadow-[0_32px_80px_rgba(0,0,0,0.2)] sm:rounded-[48px] sm:px-12 sm:py-16 lg:py-20">
           {/* Enhanced Background Effects */}
           <motion.div
-            animate={{
+            initial={{ opacity: 0.3, scale: 1 }}
+            whileInView={{
               opacity: [0.3, 0.5, 0.3],
               scale: [1, 1.05, 1],
             }}
+            viewport={{ margin: "200px" }}
             transition={{
               duration: 10,
               repeat: Infinity,
@@ -21,6 +23,7 @@ export function CtaSection() {
             }}
             className="absolute inset-0 -z-10"
             style={{
+              willChange: "transform, opacity",
               background: `
                 radial-gradient(circle at 10% 20%, var(--lp-em) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, var(--lp-peach) 0%, transparent 40%),
@@ -126,13 +129,15 @@ function FloatingElement({ children, className, delay = 0 }: { children: React.R
   return (
     <motion.div
       initial={{ y: 0 }}
-      animate={{ y: [0, -20, 0] }}
+      whileInView={{ y: [0, -20, 0] }}
+      viewport={{ margin: "100px" }}
       transition={{
         duration: 4,
         repeat: Infinity,
         ease: "easeInOut",
         delay
       }}
+      style={{ willChange: "transform" }}
       className={`absolute hidden font-serif font-bold text-lp-bg lg:block ${className}`}
     >
       {children}

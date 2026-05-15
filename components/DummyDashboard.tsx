@@ -12,7 +12,8 @@ import { AddExpenseSheet } from "@/components/sheet/AddExpenseSheet"
 import { AddIncomeSheet } from "@/components/sheet/AddIncomeSheet"
 import data from "@/constant/transaction.json"
 import { Transaction } from "@/types/Transaction"
-const DummyDashboard = () => {
+
+const DummyDashboard = ({ interactive = false }: { interactive?: boolean }) => {
   const [selectedDate, setSelectedDate] = useState(() => startOfDay(new Date()))
   const [expenseSheetOpen, setExpenseSheetOpen] = useState(false)
   const [incomeSheetOpen, setIncomeSheetOpen] = useState(false)
@@ -40,12 +41,13 @@ const DummyDashboard = () => {
           <button
             type="button"
             onClick={() => setSelectedDate((d) => subDays(d, 1))}
+            aria-label="Previous day"
             className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-sm border border-line bg-surface-elevated transition-colors active:bg-surface-alt"
           >
             <ChevronLeft size={18} className="text-ink" />
           </button>
 
-          <div className="min-w-[130px] text-center">
+          <div className="min-w-[130px] text-center" aria-live="polite">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedDate.toDateString()}
@@ -54,7 +56,7 @@ const DummyDashboard = () => {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.15 }}
               >
-                <p className="text-sm font-bold text-ink">
+                <p className="text-sm font-bold text-ink" suppressHydrationWarning>
                   {isToday(selectedDate)
                     ? "Today"
                     : selectedDate.toLocaleDateString("en-US", {
@@ -72,8 +74,9 @@ const DummyDashboard = () => {
 
           <button
             type="button"
-            onClick={() => setSelectedDate((d) => addDays(d, 1))}
+            onClick={() => addDays(selectedDate, 1) <= startOfDay(new Date()) && setSelectedDate((d) => addDays(d, 1))}
             disabled={isToday(selectedDate)}
+            aria-label="Next day"
             className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-sm border border-line bg-surface-elevated transition-colors active:bg-surface-alt disabled:opacity-25"
           >
             <ChevronRight size={18} className="text-ink" />
@@ -88,7 +91,7 @@ const DummyDashboard = () => {
             </span>
             <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full border border-line bg-surface-alt px-2.5 py-1">
               <Calendar className="h-3 w-3 text-ms-muted" />
-              <span className="text-[10px] font-medium text-ms-muted">
+              <span className="text-[10px] font-medium text-ms-muted" suppressHydrationWarning>
                 {isToday(selectedDate)
                   ? "Today"
                   : selectedDate.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
@@ -97,7 +100,7 @@ const DummyDashboard = () => {
           </div>
 
           <div className="mb-2 flex items-baseline gap-2">
-            <h1 className="text-5xl font-bold text-ink">{formatMoney(totalExpenses)}</h1>
+            <p className="text-5xl font-bold text-ink" suppressHydrationWarning>{formatMoney(totalExpenses)}</p>
           </div>
 
           <p className="text-xs font-medium text-ms-muted">
@@ -109,12 +112,14 @@ const DummyDashboard = () => {
         <div className="grid grid-cols-2 gap-3">
           <button
             type="button"
+            onClick={() => interactive && setExpenseSheetOpen(true)}
             className="flex items-center text-ink justify-center gap-3 rounded-xl border border-line bg-surface p-4 text-xs font-medium active:bg-surface-alt hover:border-green-600 cursor-pointer"
           >
             <TrendingDown size={16} className="text-expense" /> Add Expense
           </button>
           <button
             type="button"
+            onClick={() => interactive && setIncomeSheetOpen(true)}
             className="flex items-center text-ink justify-center gap-3 rounded-xl border border-line bg-surface p-4 text-xs font-medium active:bg-surface-alt hover:border-green-600 cursor-pointer"
           >
             <TrendingUp size={16} className="text-income" /> Add Income
@@ -141,17 +146,21 @@ const DummyDashboard = () => {
         ))}
       </section>
 
-      <AddExpenseSheet
-        open={expenseSheetOpen}
-        onClose={() => setExpenseSheetOpen(false)}
-        selectedDate={selectedDate}
-      />
+      {interactive && (
+        <>
+          <AddExpenseSheet
+            open={expenseSheetOpen}
+            onClose={() => setExpenseSheetOpen(false)}
+            selectedDate={selectedDate}
+          />
 
-      <AddIncomeSheet
-        open={incomeSheetOpen}
-        onClose={() => setIncomeSheetOpen(false)}
-        selectedDate={selectedDate}
-      />
+          <AddIncomeSheet
+            open={incomeSheetOpen}
+            onClose={() => setIncomeSheetOpen(false)}
+            selectedDate={selectedDate}
+          />
+        </>
+      )}
     </div>
   )
 }

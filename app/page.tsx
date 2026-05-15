@@ -1,16 +1,19 @@
 import type { Metadata } from "next"
+import dynamic from "next/dynamic"
 import { SiteHeader } from "@/components/landing/SiteHeader"
 import { HeroSection } from "@/components/landing/HeroSection"
 import { ProofStrip } from "@/components/landing/ProofStrip"
-import { SentenceSection } from "@/components/landing/SentenceSection"
-import { FeaturesSection } from "@/components/landing/FeaturesSection"
-import { ScreenGallery } from "@/components/landing/ScreenGallery"
-import { StatsSection } from "@/components/landing/StatsSection"
-import { FreeSection } from "@/components/landing/FreeSection"
-import { FaqSection } from "@/components/landing/FaqSection"
 import { faq } from "@/constant/faq"
-import { CtaSection } from "@/components/landing/CtaSection"
-import { SiteFooter } from "@/components/landing/SiteFooter"
+
+// Below the fold components
+const SentenceSection = dynamic(() => import("@/components/landing/SentenceSection").then(mod => mod.SentenceSection))
+const FeaturesSection = dynamic(() => import("@/components/landing/FeaturesSection").then(mod => mod.FeaturesSection))
+const ScreenGallery = dynamic(() => import("@/components/landing/ScreenGallery").then(mod => mod.ScreenGallery))
+const StatsSection = dynamic(() => import("@/components/landing/StatsSection").then(mod => mod.StatsSection))
+const FreeSection = dynamic(() => import("@/components/landing/FreeSection").then(mod => mod.FreeSection))
+const FaqSection = dynamic(() => import("@/components/landing/FaqSection").then(mod => mod.FaqSection))
+const CtaSection = dynamic(() => import("@/components/landing/CtaSection").then(mod => mod.CtaSection))
+const SiteFooter = dynamic(() => import("@/components/landing/SiteFooter").then(mod => mod.SiteFooter))
 
 export const metadata: Metadata = {
   title: "MoneySpent | Simple Personal Finance & Expense Tracker",

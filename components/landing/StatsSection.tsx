@@ -1,27 +1,59 @@
 "use client"
 
+import { motion, type Variants } from "motion/react"
+
 export function StatsSection() {
   const stats = [
     { n: "4", label: "Taps to log\nan expense" },
     { n: "0", label: "Ads, ever.\nNo data sold" },
     { n: "100%", label: "On-device data\nEnd-to-end private" },
   ]
+
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "backOut" } },
+  }
+
   return (
     <section className="bg-lp-bg py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr] lg:items-center">
-          <div className="text-center lg:text-left">
+          <motion.div
+            className="text-center lg:text-left"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="lp-serif mt-5 text-[38px] font-semibold leading-[1.08] tracking-[-0.035em] text-lp-ink sm:text-[48px] lg:text-[56px]">
               Built for real life,
               <span className="text-lp-ink-mute"> not for accountants.</span>
             </h2>
-          </div>
+          </motion.div>
 
-          <div className="grid gap-4 sm:grid-cols-3 lg:contents">
+          <motion.div
+            className="grid gap-4 sm:grid-cols-3 lg:contents"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             {stats.map(({ n, label }, i) => (
-              <div
+              <motion.div
                 key={i}
+                variants={itemVariants}
                 className="lp-stat-box group relative flex flex-col justify-between gap-6 rounded-[32px] border border-lp-line bg-lp-card p-8 transition-all duration-300 hover:border-lp-em/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]"
+                style={{ willChange: "transform" }}
               >
                 <div className="flex items-start justify-between">
                   <span className="lp-serif text-5xl font-semibold tracking-tighter text-lp-ink sm:text-6xl group-hover:text-lp-em transition-colors">
@@ -37,6 +69,7 @@ export function StatsSection() {
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      aria-hidden="true"
                     >
                       <path d="M5 12h14m-7-7 7 7-7 7" />
                     </svg>
@@ -47,11 +80,12 @@ export function StatsSection() {
                 </p>
                 {/* Decorative accent */}
                 <div className="absolute bottom-6 right-8 h-1 w-1 rounded-full bg-lp-em opacity-20 group-hover:scale-[8] group-hover:opacity-10 transition-all duration-500" />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
   )
 }
+

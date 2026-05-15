@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "motion/react"
 import { ChevronDown } from "lucide-react"
 
 import { faq } from "@/constant/faq"
@@ -30,9 +30,11 @@ export function FaqSection() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                aria-expanded={openIndex === i}
+                aria-controls={`faq-answer-${i}`}
                 className="flex w-full items-center justify-between p-6 text-left sm:p-8"
               >
-                <span className="text-lg font-semibold tracking-tight text-lp-ink sm:text-xl">
+                <span id={`faq-question-${i}`} className="text-lg font-semibold tracking-tight text-lp-ink sm:text-xl">
                   {item.question}
                 </span>
                 <span
@@ -40,13 +42,16 @@ export function FaqSection() {
                     openIndex === i ? "rotate-180" : ""
                   }`}
                 >
-                  <ChevronDown size={20} />
+                  <ChevronDown size={20} aria-hidden="true" />
                 </span>
               </button>
 
               <AnimatePresence initial={false}>
                 {openIndex === i && (
                   <motion.div
+                    id={`faq-answer-${i}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${i}`}
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}

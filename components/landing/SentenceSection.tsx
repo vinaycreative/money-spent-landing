@@ -1,31 +1,72 @@
 "use client"
 
 import { AnimatedSentence } from "@/components/AnimatedSentence"
+import { motion, type Variants } from "motion/react"
 
 export function SentenceSection() {
   const formFields = ["Amount", "Category", "Account", "Merchant", "Note", "Date"]
 
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  }
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  }
+
   return (
     <section id="sentence" className="py-16 lg:py-24">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
-        <div className="text-center sm:text-left">
-          <p className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0">
+        <motion.div
+          className="text-center sm:text-left"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
+          <motion.p
+            variants={itemVariants}
+            className="mx-auto flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-lp-em sm:mx-0"
+          >
             <span className="inline-block h-[5px] w-[5px] rounded-full bg-lp-em" />
             Quick logging
-          </p>
-          <h2 className="lp-serif mt-4 text-[36px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-ink sm:text-[48px] lg:text-[54px]">
+          </motion.p>
+          <motion.h2
+            variants={itemVariants}
+            className="lp-serif mt-4 text-[36px] font-semibold leading-[1.1] tracking-[-0.03em] text-lp-ink sm:text-[48px] lg:text-[54px]"
+          >
             Add spends like
             <br />
             writing a note.
-          </h2>
-          <p className="mt-6 mx-auto max-w-[600px] text-lg leading-[1.5] text-lp-ink-soft sm:mx-0 sm:text-xl">
+          </motion.h2>
+          <motion.p
+            variants={itemVariants}
+            className="mt-6 mx-auto max-w-[600px] text-lg leading-[1.5] text-lp-ink-soft sm:mx-0 sm:text-xl"
+          >
             One sentence, a few taps, and your expense/income is saved.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="mt-14 grid gap-6 grid-cols-1 md:grid-cols-2">
+        <motion.div
+          className="mt-14 grid gap-6 grid-cols-1 md:grid-cols-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
           {/* Bad: old way */}
-          <div className="flex flex-col rounded-[28px] bg-lp-bg-2 p-8 sm:p-10">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col rounded-[28px] bg-lp-bg-2 p-8 sm:p-10"
+            style={{ willChange: "transform, opacity" }}
+          >
             <span className="mb-4 inline-flex w-fit rounded-full bg-[rgba(28,25,22,.06)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-lp-ink-mute">
               Every other app
             </span>
@@ -60,10 +101,14 @@ export function SentenceSection() {
                 Save
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Good: MoneySpent */}
-          <div className="flex flex-col rounded-[28px] bg-lp-card p-8 shadow-[0_1px_0_var(--lp-line-soft)] sm:p-10">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col rounded-[28px] bg-lp-card p-8 shadow-[0_1px_0_var(--lp-line-soft)] sm:p-10"
+            style={{ willChange: "transform, opacity" }}
+          >
             <span className="mb-4 inline-flex w-fit rounded-full bg-lp-em-soft px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-lp-em-deep">
               MoneySpent
             </span>
@@ -79,9 +124,10 @@ export function SentenceSection() {
               </span>
               <span>to amount + save. The rest auto-completes from your last entry.</span>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   )
 }
+

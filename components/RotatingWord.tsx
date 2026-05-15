@@ -1,11 +1,11 @@
 "use client"
 import RotatingText from "./RotatingText"
 
-interface RotedWordProps {
+interface RotatingWordProps {
   texts: string[]
 }
 
-export const RotedWord = ({ texts }: RotedWordProps) => {
+export const RotatingWord = ({ texts }: RotatingWordProps) => {
   return (
     <RotatingText
       texts={texts}

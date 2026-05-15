@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { motion, type Variants } from "motion/react"
 
 export function SiteFooter() {
   const cols = [
@@ -34,21 +35,43 @@ export function SiteFooter() {
     },
   ]
 
+  const containerVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   return (
     <footer className="relative w-full overflow-hidden border-t border-lp-line bg-lp-bg px-4 pt-6 sm:px-6">
       <div className="mx-auto w-full max-w-[1280px]">
-        <div className="relative w-full overflow-hidden px-6 pb-0 pt-8 sm:px-10 sm:pt-10 lg:px-12">
+        <motion.div
+          className="relative w-full overflow-hidden px-6 pb-0 pt-8 sm:px-10 sm:pt-10 lg:px-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={containerVariants}
+        >
           <div className="grid gap-10 lg:grid-cols-[1.35fr_1fr] lg:gap-16">
-            <div>
+            <motion.div variants={itemVariants}>
               <Link
                 href="/"
                 className="group inline-flex items-center gap-3"
-                aria-label="MoneySpent home"
               >
                 <span className="grid size-11 place-items-center rounded-2xl border border-lp-footer-line bg-lp-footer-logo-bg">
                   <Image
                     src="/logo.svg"
-                    alt="MoneySpent"
+                    alt=""
                     width={28}
                     height={28}
                     className="transition duration-300 group-hover:rotate-6 group-hover:scale-110"
@@ -69,14 +92,14 @@ export function SiteFooter() {
                 Track accounts, expenses, and spending patterns in a personal finance workspace
                 that stays clean, fast, and easy to read.
               </p>
-            </div>
+            </motion.div>
 
             <div className="mt-12 grid gap-8 sm:grid-cols-3 lg:gap-10">
               {cols.map(({ title, links }) => (
-                <div key={title}>
-                  <h4 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-lp-footer-ink">
+                <motion.div key={title} variants={itemVariants}>
+                  <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-lp-footer-ink">
                     {title}
-                  </h4>
+                  </h3>
                   <ul className="space-y-3">
                     {links.map(([href, label]) => (
                       <li key={label}>
@@ -91,24 +114,35 @@ export function SiteFooter() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
 
-          <div className="mt-10 flex flex-col gap-3 border-t border-lp-footer-line py-5 text-sm font-medium text-lp-footer-muted sm:flex-row sm:items-center sm:justify-between">
+          <motion.div
+            variants={itemVariants}
+            className="mt-10 flex flex-col gap-3 border-t border-lp-footer-line py-5 text-sm font-medium text-lp-footer-muted sm:flex-row sm:items-center sm:justify-between"
+          >
             <span>© 2026 MoneySpent. All Right Reserved.</span>
             <span>Made with ❤️ in India</span>
-          </div>
+          </motion.div>
 
           <div className="relative overflow-hidden">
             <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-full max-h-64 w-full max-w-3xl rounded-full bg-slate-100 blur-[100px] opacity-20" />
-            <h1 className="mt-6 text-center text-[clamp(2.5rem,15vw,10rem)] font-extrabold leading-[0.8] text-transparent [-webkit-text-stroke:1px_var(--lp-footer-line-strong)]">
+            <motion.div
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              aria-hidden="true"
+              className="mt-6 text-center text-[clamp(2.5rem,15vw,10rem)] font-extrabold leading-[0.8] text-transparent [-webkit-text-stroke:1px_var(--lp-footer-line-strong)]"
+            >
               MoneySpent
-            </h1>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   )
 }
+

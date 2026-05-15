@@ -71,6 +71,7 @@ const TransactionCard = ({
           })}
         >
           <h4
+            suppressHydrationWarning
             className={cn("text-sm font-semibold", {
               "text-expense": currentTransaction.type === "expense",
               "text-income": currentTransaction.type === "income",
@@ -79,7 +80,7 @@ const TransactionCard = ({
             {currentTransaction.type === "expense" ? "-" : "+"}{" "}
             {formatMoney(currentTransaction.amount)}
           </h4>
-          <p className="text-xs text-ms-muted">
+          <p className="text-xs text-ms-muted" suppressHydrationWarning>
             {format(new Date(currentTransaction.occurred_at), "h:mm a")}
           </p>
         </div>
