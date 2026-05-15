@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "b272551b-b422-4739-9c84-95a72895f454",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 150,
+    "currency": "INR",
+    "title": "Coffee",
+    "description": "",
+    "occurred_at": "2026-05-06T17:11:12.071+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-06T17:11:44.369047+00:00",
+    "updated_at": "2026-05-06T17:11:44.369047+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "5f4c1a90-f980-4317-99f4-f947a3efc1fe",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 50,
+    "currency": "INR",
+    "title": "Snacks",
+    "description": "",
+    "occurred_at": "2026-05-02T10:12:17.018+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-02T10:13:17.522968+00:00",
+    "updated_at": "2026-05-02T10:13:17.522968+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "49bd6d0a-3bb7-4272-9bd2-b7dbc523f216",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Medicine",
+    "description": "",
+    "occurred_at": "2026-05-02T06:11:27.012+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-02T06:33:04.063374+00:00",
+    "updated_at": "2026-05-02T06:33:04.063374+00:00",
+    "categories": {
+      "id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+      "icon": "🏥",
+      "kind": "expense",
+      "name": "Health",
+      "color": "bg-red-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "504bbdb0-10cb-4e10-9c12-159c2e435aa2",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e3019c87-9515-4a4b-962f-16e589212b17",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Groceries",
+    "description": "",
+    "occurred_at": "2026-05-02T06:11:27.012+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-02T06:32:49.628573+00:00",
+    "updated_at": "2026-05-02T06:32:49.628573+00:00",
+    "categories": {
+      "id": "e3019c87-9515-4a4b-962f-16e589212b17",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Shopping",
+      "color": "bg-purple-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "89fa04f0-ae02-4b00-93db-c4cafcd12c27",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Groceries",
+    "description": "",
+    "occurred_at": "2026-05-02T02:36:54.366+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-02T02:50:59.238745+00:00",
+    "updated_at": "2026-05-02T04:56:04.381457+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "0681eeb9-124a-45f6-8f36-b9727a460242",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "63f7c907-8b34-4ec2-adb0-82fc73a1f27f",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Fuel",
+    "description": "",
+    "occurred_at": "2026-05-01T18:39:41.652+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T18:41:30.075307+00:00",
+    "updated_at": "2026-05-01T18:41:30.075307+00:00",
+    "categories": {
+      "id": "63f7c907-8b34-4ec2-adb0-82fc73a1f27f",
+      "icon": "⛽",
+      "kind": "expense",
+      "name": "Transport",
+      "color": "bg-orange-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "77c4e304-c042-48a6-be15-c832d3a974b4",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 50,
+    "currency": "INR",
+    "title": "Coffee",
+    "description": "",
+    "occurred_at": "2026-05-01T18:39:41.652+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T18:40:24.480002+00:00",
+    "updated_at": "2026-05-01T18:40:24.480002+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ab820ead-942b-4979-a721-1cabd5f7fa5a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 1000,
+    "currency": "INR",
+    "title": "Gift",
+    "description": "",
+    "occurred_at": "2026-05-01T17:13:03.488+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T17:13:48.434753+00:00",
+    "updated_at": "2026-05-01T17:13:48.434753+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "5847cdb3-63e7-4224-997d-97c4a2439a3c",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 299,
+    "currency": "INR",
+    "title": "Lunch",
+    "description": "",
+    "occurred_at": "2026-05-01T17:13:03.488+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T17:13:32.845947+00:00",
+    "updated_at": "2026-05-01T17:13:32.845947+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e281ff2e-e19f-47b5-8654-446c8e7ba1ac",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "bb9c5ad7-78b3-4ff5-a0c9-8c4a7a0a999c",
+    "type": "income",
+    "amount": 1000,
+    "currency": "INR",
+    "title": "Interest",
+    "description": "",
+    "occurred_at": "2026-05-01T17:10:14.723+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T17:11:45.660446+00:00",
+    "updated_at": "2026-05-01T17:11:45.660446+00:00",
+    "categories": {
+      "id": "bb9c5ad7-78b3-4ff5-a0c9-8c4a7a0a999c",
+      "icon": "🎁",
+      "kind": "income",
+      "name": "Gift",
+      "color": "bg-pink-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "1628e4fe-705d-48f2-9255-8909e767d834",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Lunch",
+    "description": "",
+    "occurred_at": "2026-05-01T17:10:14.723+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T17:11:18.753668+00:00",
+    "updated_at": "2026-05-01T17:11:18.753668+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "8556b6b7-7b89-46ec-a2ec-ed396642c734",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Groceries",
+    "description": "",
+    "occurred_at": "2026-05-01T15:03:02.993+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T15:05:43.91103+00:00",
+    "updated_at": "2026-05-01T15:05:43.91103+00:00",
+    "categories": {
+      "id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+      "icon": "💻",
+      "kind": "expense",
+      "name": "Dev",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "feeda2d8-871c-47a1-827d-e5877b9a2877",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "63f7c907-8b34-4ec2-adb0-82fc73a1f27f",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Coffee",
+    "description": "",
+    "occurred_at": "2026-05-01T15:03:02.993+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T15:04:15.703054+00:00",
+    "updated_at": "2026-05-01T15:04:15.703054+00:00",
+    "categories": {
+      "id": "63f7c907-8b34-4ec2-adb0-82fc73a1f27f",
+      "icon": "⛽",
+      "kind": "expense",
+      "name": "Transport",
+      "color": "bg-orange-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ec849771-b634-47d6-b5b7-041c75705286",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "bb9c5ad7-78b3-4ff5-a0c9-8c4a7a0a999c",
+    "type": "income",
+    "amount": 10000,
+    "currency": "INR",
+    "title": "Salary",
+    "description": "",
+    "occurred_at": "2026-05-01T15:03:02.993+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T15:03:44.949084+00:00",
+    "updated_at": "2026-05-01T15:03:44.949084+00:00",
+    "categories": {
+      "id": "bb9c5ad7-78b3-4ff5-a0c9-8c4a7a0a999c",
+      "icon": "🎁",
+      "kind": "income",
+      "name": "Gift",
+      "color": "bg-pink-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "f1ebfc61-b4dc-4d9c-844e-86552ae731ae",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 150,
+    "currency": "INR",
+    "title": "Medicine",
+    "description": "",
+    "occurred_at": "2026-05-01T11:11:53.262+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-05-01T11:12:34.636896+00:00",
+    "updated_at": "2026-05-01T11:12:34.636896+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "b14b37e0-728d-451b-8a8a-ca4ee3a81a59",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 500,
+    "currency": "INR",
+    "title": "Test entry",
+    "description": "fiid",
+    "occurred_at": "2026-04-27T20:27:27.95+00:00",
+    "related_transfer_id": null,
+    "created_at": "2026-04-27T20:28:37.349697+00:00",
+    "updated_at": "2026-04-27T21:05:07.45148+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "f6f29bd2-d5f7-4c45-8e5e-9d5235b4cff5",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "33db2626-3e5d-403a-89cf-caff8d7da35f",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Food",
+    "description": null,
+    "occurred_at": "2025-10-08T14:17:06.276446+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-10-08T14:17:06.276446+00:00",
+    "updated_at": "2025-10-08T14:19:06.761646+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "33db2626-3e5d-403a-89cf-caff8d7da35f",
+      "name": "SBI",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "a2aa7033-2570-4ba4-bef2-c65631024d93",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 10,
+    "currency": "INR",
+    "title": "Chocolate",
+    "description": "sada",
+    "occurred_at": "2025-09-30T13:02:27.202+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-09-30T13:04:12.736032+00:00",
+    "updated_at": "2025-09-30T13:04:12.736032+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ce8dc395-29bc-4fd6-a141-a0cb43dca574",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 821,
+    "currency": "INR",
+    "title": "Grocery",
+    "description": "Grocery",
+    "occurred_at": "2025-08-18T04:41:32.861+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-18T04:51:57.05602+00:00",
+    "updated_at": "2025-08-18T04:51:57.05602+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e5c65e2e-0ed7-4cd5-874e-329fdad466d8",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 420,
+    "currency": "INR",
+    "title": "Beer",
+    "description": "Beer",
+    "occurred_at": "2025-08-17T16:37:41.642+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-17T16:38:01.249742+00:00",
+    "updated_at": "2025-08-17T16:38:01.249742+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "b4f2b4e5-3ce1-4ee8-894c-1a69125577df",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Steller",
+    "description": "Steller",
+    "occurred_at": "2025-08-17T16:14:57.031+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-17T16:37:39.931054+00:00",
+    "updated_at": "2025-08-17T16:37:39.931054+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "6bca641f-3236-45da-9c49-74c3c89aecfc",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 482,
+    "currency": "INR",
+    "title": "Railway ticket",
+    "description": "Railway ticket",
+    "occurred_at": "2025-08-16T05:32:50.739+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-16T13:30:27.778421+00:00",
+    "updated_at": "2025-08-16T13:30:27.778421+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "608f553f-9209-4062-81b7-dc3017780cd7",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "68dec556-3386-41ce-b0ca-ed88b5866b6b",
+    "type": "expense",
+    "amount": 589,
+    "currency": "INR",
+    "title": "Wifi Recharge",
+    "description": "Wifi Recharge",
+    "occurred_at": "2025-08-16T05:07:41.022+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-16T13:29:49.558328+00:00",
+    "updated_at": "2025-08-16T13:29:49.558328+00:00",
+    "categories": {
+      "id": "68dec556-3386-41ce-b0ca-ed88b5866b6b",
+      "icon": "📱",
+      "kind": "expense",
+      "name": "Recharge",
+      "color": "bg-rose-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "73d04e02-b8a3-40ea-bb96-d999da82b5d6",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 1000,
+    "currency": "INR",
+    "title": "Mom transferred",
+    "description": "Mom transferred",
+    "occurred_at": "2025-08-16T05:07:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-16T13:28:39.667151+00:00",
+    "updated_at": "2025-08-16T13:28:39.667151+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "0bd4c129-cde8-4366-b317-5a10f760eb28",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 524,
+    "currency": "INR",
+    "title": "Blinkit + Veggies",
+    "description": "Blinkit + Veggies",
+    "occurred_at": "2025-08-15T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T16:01:17.648969+00:00",
+    "updated_at": "2025-08-16T09:18:17.130877+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ba103222-504f-4621-b6c6-44d6fbaddba3",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 219,
+    "currency": "INR",
+    "title": "Dominos",
+    "description": "Dominos",
+    "occurred_at": "2025-08-14T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T15:59:21.582805+00:00",
+    "updated_at": "2025-08-15T15:59:21.582805+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "aa733b12-d4f1-48fc-86bf-f27bb7a26f1c",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 452,
+    "currency": "INR",
+    "title": "Blinkit + Milk",
+    "description": "Blinkit + Milk",
+    "occurred_at": "2025-08-14T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T15:58:15.749713+00:00",
+    "updated_at": "2025-08-15T15:58:15.749713+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "a0511d47-aae2-4c0e-be71-6f896b3fc51a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Steller",
+    "description": "Steller",
+    "occurred_at": "2025-08-14T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T15:55:47.30994+00:00",
+    "updated_at": "2025-08-15T15:55:47.30994+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "3925e196-b0e2-411d-a2a1-15508dc75037",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+    "type": "expense",
+    "amount": 1,
+    "currency": "INR",
+    "title": "Rtw",
+    "description": "Rtw",
+    "occurred_at": "2025-08-13T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T13:03:38.61247+00:00",
+    "updated_at": "2025-08-15T13:03:38.61247+00:00",
+    "categories": {
+      "id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+      "icon": "🏥",
+      "kind": "expense",
+      "name": "Health",
+      "color": "bg-red-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "bb8b445c-eb3d-4dc6-8be0-460f80b82a24",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Recharge",
+    "description": "Recharge",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-15T12:27:19.105183+00:00",
+    "updated_at": "2025-08-15T12:27:19.105183+00:00",
+    "categories": {
+      "id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+      "icon": "🏥",
+      "kind": "expense",
+      "name": "Health",
+      "color": "bg-red-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "8f9d9983-f363-492c-880d-a0e15dd0456d",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 3400,
+    "currency": "INR",
+    "title": "Pbn to tgn",
+    "description": "Pbn to tgn",
+    "occurred_at": "2025-08-14T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-14T06:37:52.014637+00:00",
+    "updated_at": "2025-08-14T06:37:52.014637+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "4a25338f-f0b7-4f2f-84a6-3ae0c122f744",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 3500,
+    "currency": "INR",
+    "title": "Mom transferred",
+    "description": "Mom transferred",
+    "occurred_at": "2025-08-14T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-14T06:37:04.127656+00:00",
+    "updated_at": "2025-08-14T06:37:04.127656+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "55c54a6b-2cf9-4cf5-966f-f889958bc316",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "4ce9ee91-d720-483d-b3bf-825559239031",
+    "type": "expense",
+    "amount": 13000,
+    "currency": "INR",
+    "title": "House Rent",
+    "description": "House Rent",
+    "occurred_at": "2025-08-13T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T10:37:13.053789+00:00",
+    "updated_at": "2025-08-13T10:37:13.053789+00:00",
+    "categories": {
+      "id": "4ce9ee91-d720-483d-b3bf-825559239031",
+      "icon": "📄",
+      "kind": "expense",
+      "name": "Bills",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "6c1c002f-4c6f-49a7-bb7e-6c17e36e624d",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 257,
+    "currency": "INR",
+    "title": "Mapusa To Heritage",
+    "description": "Mapusa To Heritage",
+    "occurred_at": "2025-08-13T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T05:05:26.553621+00:00",
+    "updated_at": "2025-08-13T05:05:26.553621+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "c93a11aa-d48f-40ea-9cff-25e479463ee9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 140,
+    "currency": "INR",
+    "title": "Breakfast ",
+    "description": "Breakfast ",
+    "occurred_at": "2025-08-13T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T02:00:11.652551+00:00",
+    "updated_at": "2025-08-13T02:00:11.652551+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "544485b4-321e-4378-8db5-441aed2d215f",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+    "type": "expense",
+    "amount": 12,
+    "currency": "INR",
+    "title": "Closed up ",
+    "description": "Closed up ",
+    "occurred_at": "2025-08-13T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T01:59:30.588925+00:00",
+    "updated_at": "2025-08-13T01:59:30.588925+00:00",
+    "categories": {
+      "id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+      "icon": "🏀",
+      "kind": "expense",
+      "name": "Fun",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "5a90ff67-9339-4443-84c5-77a486eecc50",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+    "type": "expense",
+    "amount": 50,
+    "currency": "INR",
+    "title": "Charity ",
+    "description": "Charity ",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T01:58:38.081951+00:00",
+    "updated_at": "2025-08-13T01:58:38.081951+00:00",
+    "categories": {
+      "id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+      "icon": "🏀",
+      "kind": "expense",
+      "name": "Fun",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "a8aa6ef1-3eaa-44bf-89fb-4489f25618ff",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 50,
+    "currency": "INR",
+    "title": "Thumbs Up",
+    "description": "Thumbs Up",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T01:58:11.905742+00:00",
+    "updated_at": "2025-08-13T01:58:11.905742+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "8d586504-fc63-4fe2-906a-ae7e125ed2e2",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+    "type": "expense",
+    "amount": 100,
+    "currency": "INR",
+    "title": "Head massage ",
+    "description": "Head massage ",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-13T01:57:45.321783+00:00",
+    "updated_at": "2025-08-13T01:57:45.321783+00:00",
+    "categories": {
+      "id": "2820dd4d-5448-474b-bcf2-055fb5989d28",
+      "icon": "🏀",
+      "kind": "expense",
+      "name": "Fun",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "985cc812-4b00-466a-857a-11761eede5a6",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 62,
+    "currency": "INR",
+    "title": "Mild",
+    "description": "Mild",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T17:13:32.476805+00:00",
+    "updated_at": "2025-08-12T17:13:32.476805+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "62045b13-400c-42fa-b315-3021afeb44b9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 1115,
+    "currency": "INR",
+    "title": "Tinku Transferred Ticket",
+    "description": "Tinku Transferred Ticket",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:09:46.551758+00:00",
+    "updated_at": "2025-08-12T16:09:46.551758+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "114dece8-c7dd-478f-911e-1b4c55c5ca6a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 95,
+    "currency": "INR",
+    "title": "Chips",
+    "description": "Chips",
+    "occurred_at": "2025-08-09T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:08:32.688508+00:00",
+    "updated_at": "2025-08-12T16:08:32.688508+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e7472d12-ac4c-4467-b3db-6cd5dc45ded8",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 30,
+    "currency": "INR",
+    "title": "Flowers ",
+    "description": "Flowers ",
+    "occurred_at": "2025-08-08T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:06:39.445478+00:00",
+    "updated_at": "2025-08-12T16:06:39.445478+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "940cf44d-e81d-4307-978d-deb5e0eb51a6",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 90,
+    "currency": "INR",
+    "title": "Shift",
+    "description": "Shift",
+    "occurred_at": "2025-08-08T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:04:36.949192+00:00",
+    "updated_at": "2025-08-12T16:04:36.949192+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "270b97ae-734d-4481-91e4-2c0a97efdb8f",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+    "type": "expense",
+    "amount": 133,
+    "currency": "INR",
+    "title": "Roll on ",
+    "description": "Roll on ",
+    "occurred_at": "2025-08-08T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:03:41.908338+00:00",
+    "updated_at": "2025-08-12T16:03:41.908338+00:00",
+    "categories": {
+      "id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+      "icon": "🏥",
+      "kind": "expense",
+      "name": "Health",
+      "color": "bg-red-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ed430a00-8297-4b84-9577-1002ef5266d0",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 610,
+    "currency": "INR",
+    "title": "Beer",
+    "description": "Beer",
+    "occurred_at": "2025-08-08T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:03:00.468183+00:00",
+    "updated_at": "2025-08-12T16:03:00.468183+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "538d6f1e-a047-4ca8-8f7f-ac17acf19b1f",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 3534,
+    "currency": "INR",
+    "title": "Pbn to Tgn",
+    "description": "Pbn to Tgn",
+    "occurred_at": "2025-08-08T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T16:02:15.871615+00:00",
+    "updated_at": "2025-08-12T16:02:15.871615+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "85486c77-ac60-474e-8233-3a2236552b1c",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 80,
+    "currency": "INR",
+    "title": "Paper cup",
+    "description": "Paper cup",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:59:39.647137+00:00",
+    "updated_at": "2025-08-12T15:59:39.647137+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "2fe81989-0c04-4a8e-86fb-8da0f89000b2",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 230,
+    "currency": "INR",
+    "title": "Paper dish",
+    "description": "Paper dish",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:58:55.136935+00:00",
+    "updated_at": "2025-08-12T15:58:55.136935+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "d5093c50-eb6f-4a4f-84af-7bd6ffdf1c9a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 630,
+    "currency": "INR",
+    "title": "Hotel Tulsi Parcel",
+    "description": "Hotel Tulsi Parcel",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:58:05.136026+00:00",
+    "updated_at": "2025-08-12T15:58:05.136026+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "a26c6115-c531-4fbf-9fca-aeb0e01735ee",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e3019c87-9515-4a4b-962f-16e589212b17",
+    "type": "expense",
+    "amount": 3848,
+    "currency": "INR",
+    "title": "Clothes ",
+    "description": "Clothes ",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:57:05.657432+00:00",
+    "updated_at": "2025-08-12T15:57:05.657432+00:00",
+    "categories": {
+      "id": "e3019c87-9515-4a4b-962f-16e589212b17",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Shopping",
+      "color": "bg-purple-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "34ed525d-5410-4298-a875-12d00b94574e",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 399,
+    "currency": "INR",
+    "title": "Lunch",
+    "description": "Lunch",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:54:01.539803+00:00",
+    "updated_at": "2025-08-12T15:54:01.539803+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "789db681-8cd0-4b83-8a3c-f371f21ec277",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 80,
+    "currency": "INR",
+    "title": "Auto",
+    "description": "Auto",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:53:27.882859+00:00",
+    "updated_at": "2025-08-12T15:53:27.882859+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "d1848c68-89ec-4bca-b7aa-38c6fcb4439f",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 1296,
+    "currency": "INR",
+    "title": "Heritage to Airport ",
+    "description": "Heritage to Airport ",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:52:57.370214+00:00",
+    "updated_at": "2025-08-12T15:52:57.370214+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "9aca9b56-3fc4-40ae-9d58-2d65d1f349ea",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 673.6,
+    "currency": "INR",
+    "title": "Auranbd to Pbn",
+    "description": "Auranbd to Pbn",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:52:14.660651+00:00",
+    "updated_at": "2025-08-12T15:52:14.660651+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "b8f30f18-2132-469c-8160-141811749ab9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 10902,
+    "currency": "INR",
+    "title": "Goa to Aura.bad Flight ",
+    "description": "Goa to Aura.bad Flight ",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:51:22.933103+00:00",
+    "updated_at": "2025-08-12T15:51:22.933103+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "3642b451-6832-401f-8904-ddcc3e830352",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 291,
+    "currency": "INR",
+    "title": "Mapusa to Heritage ",
+    "description": "Mapusa to Heritage ",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:50:02.890618+00:00",
+    "updated_at": "2025-08-12T15:50:02.890618+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "439b1454-23a0-4536-8b0d-93315ed68210",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 60,
+    "currency": "INR",
+    "title": "Cigg",
+    "description": "Cigg",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:49:17.834662+00:00",
+    "updated_at": "2025-08-12T15:49:17.834662+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "4478582c-0721-4ac5-9a00-a725fcea93cb",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 292,
+    "currency": "INR",
+    "title": "Heritage To Mapusa Cab",
+    "description": "Heritage To Mapusa Cab",
+    "occurred_at": "2025-08-07T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:48:17.016519+00:00",
+    "updated_at": "2025-08-12T15:48:17.016519+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "49818933-de87-4e0b-b3c6-83848cc9162c",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "2dd7886b-4dbf-4ef6-99de-74741ab89874",
+    "type": "expense",
+    "amount": 20,
+    "currency": "INR",
+    "title": "Parking",
+    "description": "Parking",
+    "occurred_at": "2025-08-06T14:34:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:47:04.223269+00:00",
+    "updated_at": "2025-08-16T18:18:08.744655+00:00",
+    "categories": {
+      "id": "2dd7886b-4dbf-4ef6-99de-74741ab89874",
+      "icon": "📁",
+      "kind": "expense",
+      "name": "Other",
+      "color": "bg-gray-500"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e5450d2f-bcc6-43b1-9b9e-2eedc994a45f",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 248,
+    "currency": "INR",
+    "title": "Heritage To Mapusa Cab",
+    "description": "Heritage To Mapusa Cab",
+    "occurred_at": "2025-08-06T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:46:29.489677+00:00",
+    "updated_at": "2025-08-12T15:46:29.489677+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "7399e5a4-b62b-41c2-8c7c-d0cba18f7c9b",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 1000,
+    "currency": "INR",
+    "title": "Jyotsna transferred",
+    "description": "Jyotsna transferred",
+    "occurred_at": "2025-08-09T17:08:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:45:34.307574+00:00",
+    "updated_at": "2025-08-16T18:14:23.397779+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "3f41d97e-48fd-460e-94f9-01a5846056e4",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 920,
+    "currency": "INR",
+    "title": "Beer",
+    "description": "Beer",
+    "occurred_at": "2025-08-05T15:54:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T15:44:16.830604+00:00",
+    "updated_at": "2025-08-16T18:13:26.169807+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "e39ba35b-5d02-4c3e-94fa-7a7ddae85c22",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 374,
+    "currency": "INR",
+    "title": "Talegaon To Akurdi Cab",
+    "description": "Talegaon To Akurdi Cab",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T13:58:41.570371+00:00",
+    "updated_at": "2025-08-12T13:58:41.570371+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "dc277f4c-5e94-4120-bb5a-6261a7e3d79b",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 40,
+    "currency": "INR",
+    "title": "Wada",
+    "description": "Wada",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T05:57:24.499449+00:00",
+    "updated_at": "2025-08-12T05:57:24.499449+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "12d016a1-3122-4fb3-ae2e-9a3881f8d8c9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+    "type": "expense",
+    "amount": 400,
+    "currency": "INR",
+    "title": "Eye check-up",
+    "description": "Eye check-up",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T05:56:51.273127+00:00",
+    "updated_at": "2025-08-12T05:56:51.273127+00:00",
+    "categories": {
+      "id": "e19c472d-710b-48f9-bc0d-5da817651c24",
+      "icon": "🏥",
+      "kind": "expense",
+      "name": "Health",
+      "color": "bg-red-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e9d58a83-4f8e-43f8-8580-242a7772b638",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "68dec556-3386-41ce-b0ca-ed88b5866b6b",
+    "type": "expense",
+    "amount": 979,
+    "currency": "INR",
+    "title": "Phone recharge ",
+    "description": "Phone recharge ",
+    "occurred_at": "2025-08-12T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-12T05:56:06.305786+00:00",
+    "updated_at": "2025-08-12T05:56:06.305786+00:00",
+    "categories": {
+      "id": "68dec556-3386-41ce-b0ca-ed88b5866b6b",
+      "icon": "📱",
+      "kind": "expense",
+      "name": "Recharge",
+      "color": "bg-rose-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "8d3efc37-998a-4667-a238-3f8d27980967",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 225,
+    "currency": "INR",
+    "title": "Rolls",
+    "description": "Rolls",
+    "occurred_at": "2025-08-11T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:30:50.02822+00:00",
+    "updated_at": "2025-08-11T17:30:50.02822+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "b2fe2072-8364-4b21-8a16-9ffbf2f756b9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "66de7203-5d6a-4146-932f-49940cf7a031",
+    "type": "expense",
+    "amount": 2062,
+    "currency": "INR",
+    "title": "Pune To Goa",
+    "description": "Pune To Goa",
+    "occurred_at": "2025-08-11T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:30:26.818912+00:00",
+    "updated_at": "2025-08-11T17:30:26.818912+00:00",
+    "categories": {
+      "id": "66de7203-5d6a-4146-932f-49940cf7a031",
+      "icon": "🚌",
+      "kind": "expense",
+      "name": "Travel",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "5a77161d-6f85-451e-a265-c74d4d629076",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "2dd7886b-4dbf-4ef6-99de-74741ab89874",
+    "type": "expense",
+    "amount": 90,
+    "currency": "INR",
+    "title": "Du",
+    "description": "Du",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:27:28.789994+00:00",
+    "updated_at": "2025-08-11T17:27:28.789994+00:00",
+    "categories": {
+      "id": "2dd7886b-4dbf-4ef6-99de-74741ab89874",
+      "icon": "📁",
+      "kind": "expense",
+      "name": "Other",
+      "color": "bg-gray-500"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "11cc5d72-4c5e-4aa1-bd94-977dcad6302a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 159,
+    "currency": "INR",
+    "title": "Milk + Khari",
+    "description": "Milk + Khari",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:26:47.455988+00:00",
+    "updated_at": "2025-08-11T17:26:47.455988+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "f35a9ff0-d7b4-45df-ab32-6f69d75cd1c3",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+    "type": "expense",
+    "amount": 1399,
+    "currency": "INR",
+    "title": "Unigen Hub Adapter",
+    "description": "Unigen Hub Adapter",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:25:01.047263+00:00",
+    "updated_at": "2025-08-11T17:25:01.047263+00:00",
+    "categories": {
+      "id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+      "icon": "💻",
+      "kind": "expense",
+      "name": "Dev",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "fb8d0165-ce62-4cbb-b3a4-5fe3a4367ca0",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Steller",
+    "description": "Steller",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-11T17:23:44.076187+00:00",
+    "updated_at": "2025-08-11T17:23:44.076187+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "921825aa-4589-4676-803a-71c47a5a74c9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 674,
+    "currency": "INR",
+    "title": "Lunch",
+    "description": "Lunch",
+    "occurred_at": "2025-08-10T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-10T12:07:04.469095+00:00",
+    "updated_at": "2025-08-10T12:07:04.469095+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e51874e4-e2ec-4e90-855b-d91bb49d901c",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "f6d32c4f-bd6d-4e58-b2ae-0af0b07a8be2",
+    "type": "income",
+    "amount": 58000,
+    "currency": "INR",
+    "title": "Salary",
+    "description": "Salary",
+    "occurred_at": "2025-08-05T16:08:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T19:52:56.863882+00:00",
+    "updated_at": "2025-08-16T17:45:50.953329+00:00",
+    "categories": {
+      "id": "f6d32c4f-bd6d-4e58-b2ae-0af0b07a8be2",
+      "icon": "💰",
+      "kind": "income",
+      "name": "Salary",
+      "color": "bg-green-500"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "f1057950-4aff-4179-8024-068cf6d2353e",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 960,
+    "currency": "INR",
+    "title": "Dinner",
+    "description": "Dinner",
+    "occurred_at": "2025-08-03T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T19:52:25.046066+00:00",
+    "updated_at": "2025-08-05T19:52:25.046066+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "8ac48a0f-0976-4c1c-bec3-a8f43164a6c6",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 1000,
+    "currency": "INR",
+    "title": "Jyotsna transferred ",
+    "description": "Jyotsna transferred ",
+    "occurred_at": "2025-08-03T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T19:51:43.032142+00:00",
+    "updated_at": "2025-08-05T19:51:43.032142+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "c4a08989-78e3-416b-9eb2-9daae9303183",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 70,
+    "currency": "INR",
+    "title": "Chips",
+    "description": "Chips",
+    "occurred_at": "2025-08-03T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T19:49:39.852507+00:00",
+    "updated_at": "2025-08-05T19:49:39.852507+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "78a771b5-9401-4d40-a31e-d5ad65a23476",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 650,
+    "currency": "INR",
+    "title": "Beer",
+    "description": "Beer",
+    "occurred_at": "2025-08-03T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T19:47:55.458996+00:00",
+    "updated_at": "2025-08-05T19:47:55.458996+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "5c400542-7313-4d08-8794-b79012fc791d",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+    "type": "expense",
+    "amount": 538,
+    "currency": "INR",
+    "title": "Domain Purchase ",
+    "description": "Domain Purchase ",
+    "occurred_at": "2025-08-04T14:37:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T14:19:53.423197+00:00",
+    "updated_at": "2025-08-16T17:56:50.745811+00:00",
+    "categories": {
+      "id": "687ecc5a-f04d-49a5-8a54-fb975719020f",
+      "icon": "💻",
+      "kind": "expense",
+      "name": "Dev",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "d9a7bda6-33ef-4aa3-8a58-5f8ac5beadc1",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "51bf1056-0256-4f6b-85f8-5c107883ffe0",
+    "type": "expense",
+    "amount": 18000,
+    "currency": "INR",
+    "title": "MacBook Air ",
+    "description": "MacBook Air ",
+    "occurred_at": "2025-08-05T07:31:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T07:32:04.425172+00:00",
+    "updated_at": "2025-08-16T18:02:53.587979+00:00",
+    "categories": {
+      "id": "51bf1056-0256-4f6b-85f8-5c107883ffe0",
+      "icon": "📈",
+      "kind": "income",
+      "name": "Investment",
+      "color": "bg-green-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "95a6972e-3476-4e36-86c3-381982460fe2",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 18000,
+    "currency": "INR",
+    "title": "Jyotsna transferred ",
+    "description": "Jyotsna transferred ",
+    "occurred_at": "2025-08-05T07:24:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-05T07:29:04.668053+00:00",
+    "updated_at": "2025-08-16T18:01:39.114929+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "ed872671-96be-46e3-afb1-aa0b89785638",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "0075f538-2073-4070-820e-99fa5c8bed94",
+    "type": "expense",
+    "amount": 454.28,
+    "currency": "INR",
+    "title": "Pizza",
+    "description": "Pizza",
+    "occurred_at": "2025-08-02T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:40:20.81164+00:00",
+    "updated_at": "2025-08-04T15:40:20.81164+00:00",
+    "categories": {
+      "id": "0075f538-2073-4070-820e-99fa5c8bed94",
+      "icon": "🍔",
+      "kind": "expense",
+      "name": "Food",
+      "color": "bg-yellow-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "a04e54a4-15a6-4ebd-9909-80872d664ec6",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Stellar Define",
+    "description": "Stellar Define",
+    "occurred_at": "2025-08-02T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:37:42.104672+00:00",
+    "updated_at": "2025-08-04T15:37:42.104672+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "d9735010-c5ea-415b-ae54-baceb096f950",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 447,
+    "currency": "INR",
+    "title": "Grocery",
+    "description": "Grocery",
+    "occurred_at": "2025-08-02T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:35:47.86329+00:00",
+    "updated_at": "2025-08-04T15:35:47.86329+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "70702b46-7e3c-46ca-9f66-83e0e21479e7",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+    "type": "expense",
+    "amount": 200,
+    "currency": "INR",
+    "title": "Cigg",
+    "description": "Define Cigg",
+    "occurred_at": "2025-08-04T12:53:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:16:34.5239+00:00",
+    "updated_at": "2025-08-16T17:57:55.569074+00:00",
+    "categories": {
+      "id": "1781be32-bbba-441e-8cf3-2f4f2964d174",
+      "icon": "💨",
+      "kind": "expense",
+      "name": "Cigg",
+      "color": "#F472B6"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "5e22ee2f-68e1-4c02-8e7a-fe980acdbda0",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 725,
+    "currency": "INR",
+    "title": "Wine",
+    "description": "Wine",
+    "occurred_at": "2025-08-02T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:14:20.790998+00:00",
+    "updated_at": "2025-08-04T15:14:20.790998+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  },
+  {
+    "id": "ca1ea659-0863-4bd1-a9ce-25a0e6f4d7c9",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+    "type": "expense",
+    "amount": 600,
+    "currency": "INR",
+    "title": "Grocery ",
+    "description": "Grocery ",
+    "occurred_at": "2025-08-04T12:53:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T15:12:46.242014+00:00",
+    "updated_at": "2025-08-16T17:53:10.087017+00:00",
+    "categories": {
+      "id": "3464cadb-2ed3-42f8-b360-4faf015eb745",
+      "icon": "🛒",
+      "kind": "expense",
+      "name": "Grocery",
+      "color": "bg-lime-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "91fbeecf-6c31-4559-afcc-12615faa083a",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+    "category_id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+    "type": "income",
+    "amount": 800,
+    "currency": "INR",
+    "title": "Jyotsna ",
+    "description": "Jyotsna transferred",
+    "occurred_at": "2025-08-04T12:52:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-04T14:28:21.60503+00:00",
+    "updated_at": "2025-08-16T17:52:43.856651+00:00",
+    "categories": {
+      "id": "095d96f5-5099-43dc-9037-cd11c5824a26",
+      "icon": "🏛️",
+      "kind": "income",
+      "name": "Transfer ",
+      "color": "bg-gray-400"
+    },
+    "accounts": {
+      "id": "0907742c-38b2-448b-8cc3-b1e4321b82a4",
+      "name": "Fi",
+      "type": "bank"
+    }
+  },
+  {
+    "id": "e5fef75e-1fa6-4dd6-9548-ec5e0a5c1b59",
+    "user_id": "9020546d-9b2f-4a1b-bd21-bb1d3d0edbf8",
+    "account_id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+    "category_id": "56bf303c-5533-4508-a064-96064f203984",
+    "type": "expense",
+    "amount": 260,
+    "currency": "INR",
+    "title": "Beer",
+    "description": "Beer",
+    "occurred_at": "2025-08-03T00:00:00+00:00",
+    "related_transfer_id": null,
+    "created_at": "2025-08-03T16:26:51.863156+00:00",
+    "updated_at": "2025-08-03T16:26:51.863156+00:00",
+    "categories": {
+      "id": "56bf303c-5533-4508-a064-96064f203984",
+      "icon": "🏖️",
+      "kind": "expense",
+      "name": "Drink",
+      "color": "bg-indigo-400"
+    },
+    "accounts": {
+      "id": "4b0afb3b-583d-453a-9657-b29cc4afc9ce",
+      "name": "SBI",
+      "type": "credit"
+    }
+  }
+]
