@@ -4,16 +4,19 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion, type Variants } from "motion/react"
 import posthog from "posthog-js"
+import { useAppUrl } from "@/hooks/use-app-url"
 
 export function SiteFooter() {
+  const loginUrl = useAppUrl("/login")
+  const onboardingUrl = useAppUrl("/onboarding")
   const cols = [
     {
       title: "Product",
       links: [
         ["#features", "Features"],
         ["#how-it-works", "How it works"],
-        ["https://my.moneyspent.app/onboarding", "Get started"],
-        ["https://my.moneyspent.app", "Sign in"],
+        [onboardingUrl, "Get started"],
+        [loginUrl, "Sign in"],
       ],
     },
     // {

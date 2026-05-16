@@ -4,12 +4,15 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import posthog from "posthog-js"
 import { RotatingWord } from "@/components/RotatingWord"
+import { useAppUrl } from "@/hooks/use-app-url"
 
 const DashboardPreview = dynamic(() =>
   import("@/components/landing/DashboardPreview").then((mod) => mod.DashboardPreview),
 )
 
 export function HeroSection() {
+  const onboardingUrl = useAppUrl("/onboarding")
+
   return (
     <section className="overflow-hidden pt-12 pb-12 lg:pt-20 lg:pb-20">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
@@ -36,7 +39,7 @@ export function HeroSection() {
 
               <div className="lp-hero-cta mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
                 <Link
-                  href="/onboarding"
+                  href={onboardingUrl}
                   className="lp-btn-primary inline-flex min-h-12 items-center gap-2 rounded-full bg-lp-ink px-6 text-sm font-semibold text-lp-bg shadow-[0_8px_20px_rgba(28,25,22,.18)]"
                   onClick={() => posthog.capture("hero_cta_clicked", { location: "hero" })}
                 >

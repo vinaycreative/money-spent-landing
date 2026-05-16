@@ -3,8 +3,12 @@
 import Link from "next/link"
 import { motion } from "motion/react"
 import posthog from "posthog-js"
+import { useAppUrl } from "@/hooks/use-app-url"
 
 export function CtaSection() {
+  const loginUrl = useAppUrl("/login")
+  const onboardingUrl = useAppUrl("/onboarding")
+
   return (
     <section id="download" className="relative isolate py-12 lg:py-20 overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
@@ -94,7 +98,7 @@ export function CtaSection() {
               className="mt-10 flex flex-wrap justify-center gap-3"
             >
               <Link
-                href="/onboarding"
+                href={onboardingUrl}
                 className="group relative inline-flex min-h-12 items-center gap-2 overflow-hidden rounded-full bg-lp-bg px-7 text-sm font-semibold text-lp-ink transition-all hover:scale-105 active:scale-95"
                 onClick={() => posthog.capture("cta_get_started_clicked", { location: "cta_section" })}
               >
@@ -104,7 +108,7 @@ export function CtaSection() {
                 </span>
               </Link>
               <Link
-                href="/login"
+                href={loginUrl}
                 className="inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-inv-border bg-white/5 px-7 text-sm font-medium text-lp-inv-link backdrop-blur-md transition-all hover:bg-white/10"
                 onClick={() => posthog.capture("cta_sign_in_clicked", { location: "cta_section" })}
               >

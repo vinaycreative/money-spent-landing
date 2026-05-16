@@ -4,12 +4,16 @@ import Image from "next/image"
 import Link from "next/link"
 import posthog from "posthog-js"
 import { LpThemeToggle } from "@/components/LpThemeToggle"
+import { useAppUrl } from "@/hooks/use-app-url"
 
 export function SiteHeader() {
   const navLinks = [
     ["#features", "Features"],
     ["#sentence", "How it works"],
   ] as const
+
+  const loginUrl = useAppUrl("/login")
+  const onboardingUrl = useAppUrl("/onboarding")
 
   return (
     <header className="sticky top-0 z-50 border-b border-lp-line bg-lp-header-bg backdrop-blur-lg backdrop-saturate-[1.5]">
@@ -50,7 +54,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-2 sm:gap-3">
             <LpThemeToggle />
             <Link
-              href="https://my.moneyspent.app/login"
+              href={loginUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="lp-nav-link hidden rounded-lg px-3.5 py-2 text-sm font-medium sm:inline-flex"
@@ -59,7 +63,7 @@ export function SiteHeader() {
               Sign in
             </Link>
             <Link
-              href="https://my.moneyspent.app/onboarding"
+              href={onboardingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="lp-btn-primary inline-flex min-h-10 items-center gap-1.5 rounded-full bg-lp-ink px-4 text-[13px] font-semibold text-lp-bg sm:px-5 sm:text-sm"

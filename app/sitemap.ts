@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl().toString().replace(/\/$/, "")
 
   // Core routes
-  const routes = ["", "/privacy", "/terms", "/cookies", "/login", "/onboarding"].map((route) => ({
+  const routes = ["", "/privacy", "/terms", "/cookies"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
     changeFrequency: (route === "" ? "weekly" : "monthly") as

@@ -3,8 +3,10 @@
 import { Check } from "lucide-react"
 import Link from "next/link"
 import { motion, type Variants } from "motion/react"
+import { useAppUrl } from "@/hooks/use-app-url"
 
 export function FreeSection() {
+  const onboardingUrl = useAppUrl("/onboarding")
   const features = [
     "Unlimited manual transactions",
     "Track multiple accounts & cards",
@@ -110,7 +112,7 @@ export function FreeSection() {
               </p>
 
               <Link
-                href="/onboarding"
+                href={onboardingUrl}
                 className="lp-btn-primary mt-10 inline-flex w-full min-h-14 items-center justify-center gap-2 rounded-full bg-lp-ink px-8 text-base font-bold text-lp-bg transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 Get started free →
