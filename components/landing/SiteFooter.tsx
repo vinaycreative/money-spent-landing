@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion, type Variants } from "motion/react"
+import posthog from "posthog-js"
 
 export function SiteFooter() {
   const cols = [
@@ -104,6 +105,10 @@ export function SiteFooter() {
                           className="text-sm text-lp-footer-muted opacity-78 transition hover:opacity-100"
                           target={href.startsWith("http") ? "_blank" : undefined}
                           rel={href.startsWith("http") ? "noreferrer" : undefined}
+                          onClick={() =>
+                            (label === "Get started" || label === "Sign in") &&
+                            posthog.capture("footer_cta_clicked", { label, location: "footer" })
+                          }
                         >
                           {label}
                         </Link>

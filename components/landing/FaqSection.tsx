@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { ChevronDown } from "lucide-react"
+import posthog from "posthog-js"
 
 import { faq } from "@/constant/faq"
 
@@ -30,7 +31,13 @@ export function FaqSection() {
             >
               <dt>
                 <button
-                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  onClick={() => {
+                    const isOpening = openIndex !== i
+                    setOpenIndex(isOpening ? i : null)
+                    if (isOpening) {
+                      posthog.capture("faq_question_expanded", { question: item.question, question_index: i })
+                    }
+                  }}
                   aria-expanded={openIndex === i}
                   aria-controls={`faq-answer-${i}`}
                   className="flex w-full items-center justify-between p-6 text-left sm:p-8"

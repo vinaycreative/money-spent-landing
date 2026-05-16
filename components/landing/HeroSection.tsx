@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import dynamic from "next/dynamic"
+import posthog from "posthog-js"
 import { RotatingWord } from "@/components/RotatingWord"
 
 const DashboardPreview = dynamic(() =>
@@ -37,12 +38,14 @@ export function HeroSection() {
                 <Link
                   href="/onboarding"
                   className="lp-btn-primary inline-flex min-h-12 items-center gap-2 rounded-full bg-lp-ink px-6 text-sm font-semibold text-lp-bg shadow-[0_8px_20px_rgba(28,25,22,.18)]"
+                  onClick={() => posthog.capture("hero_cta_clicked", { location: "hero" })}
                 >
                   Start tracking →
                 </Link>
                 <Link
                   href="#sentence"
                   className="inline-flex min-h-12 items-center gap-2 rounded-full px-5 text-sm font-medium text-lp-ink transition-opacity duration-200 hover:opacity-60"
+                  onClick={() => posthog.capture("hero_explore_clicked", { location: "hero" })}
                 >
                   Explore the app
                 </Link>

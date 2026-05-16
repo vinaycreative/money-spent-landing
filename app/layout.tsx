@@ -2,7 +2,8 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono, Fraunces } from "next/font/google"
 import "./globals.css"
 import { getSiteUrl, siteDescription, siteName } from "@/lib/site"
-
+import { GoogleAnalytics } from "@next/third-parties/google"
+import { PostHogProvider } from "@/providers/posthog-provider"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -109,14 +110,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} bg-background`}
         suppressHydrationWarning
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </PostHogProvider>
+        <GoogleAnalytics gaId="G-7H7SDLWXRM" />
       </body>
     </html>
   )

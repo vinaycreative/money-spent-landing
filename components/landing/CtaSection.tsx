@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "motion/react"
+import posthog from "posthog-js"
 
 export function CtaSection() {
   return (
@@ -95,6 +96,7 @@ export function CtaSection() {
               <Link
                 href="/onboarding"
                 className="group relative inline-flex min-h-12 items-center gap-2 overflow-hidden rounded-full bg-lp-bg px-7 text-sm font-semibold text-lp-ink transition-all hover:scale-105 active:scale-95"
+                onClick={() => posthog.capture("cta_get_started_clicked", { location: "cta_section" })}
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Get Started Now
@@ -104,6 +106,7 @@ export function CtaSection() {
               <Link
                 href="/login"
                 className="inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-inv-border bg-white/5 px-7 text-sm font-medium text-lp-inv-link backdrop-blur-md transition-all hover:bg-white/10"
+                onClick={() => posthog.capture("cta_sign_in_clicked", { location: "cta_section" })}
               >
                 Sign in to account
               </Link>
