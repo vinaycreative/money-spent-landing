@@ -26,10 +26,7 @@ export const viewport: Viewport = {
   viewportFit: "cover",
   width: "device-width",
   initialScale: 1,
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0d0e0c" },
-    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
-  ],
+  themeColor: "#0d0e0c",
 }
 
 export const metadata: Metadata = {
@@ -113,7 +110,7 @@ export default function RootLayout({
         <PostHogProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >

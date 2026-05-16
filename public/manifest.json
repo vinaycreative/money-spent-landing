@@ -4,7 +4,7 @@
   "description": "Simple personal finance tracker for expenses, budgets, accounts, and spending insights.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f7f4",
+  "background_color": "#0d0e0c",
   "theme_color": "#0d0e0c",
   "icons": [
     {
