@@ -1,0 +1,8 @@
+# Pricing — MoneySpent
+
+MoneySpent is completely free for personal use. It is built for people, not for profit.
+
+## Personal Plan
+- Price: $0/month (Free forever)
+- Limits: Unlimited manual transactions, unlimited accounts & cards
+- Features: Smart category management, personalized spending insights, 100% private on-device data, no ads, no data tracking.

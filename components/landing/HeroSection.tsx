@@ -33,6 +33,12 @@ export function HeroSection() {
             </h1>
 
             <div>
+              <div className="sr-only">
+                MoneySpent is a simple, private personal finance tracker. Log your daily spending
+                in seconds, stay on budget with smart categories, and track all your account
+                balances in one clear dashboard. Join over 2,000+ happy users tracking their money
+                completely free.
+              </div>
               <p className="lp-hero-sub mt-6 mx-auto max-w-[520px] text-lg leading-[1.55] text-lp-ink-soft sm:text-xl lg:mx-0">
                 Log spending in seconds, stay on budget, and know where your money goes.
               </p>
@@ -115,7 +121,7 @@ export function HeroSection() {
                 </span>{" "}
                 paid with{" "}
                 <span className="border-b-2 border-lp-rose pb-px font-semibold text-lp-rose">
-                  Fi
+                  HDFC Bank
                 </span>
                 .
               </p>

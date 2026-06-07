@@ -77,7 +77,7 @@ const jsonLd = {
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web, iOS, Android",
   description:
-    "A personal finance tracker for expenses, budgets, accounts, balances, and spending insights.",
+    "MoneySpent is a personal finance tracker used by over 2,000+ users to track expenses, budgets, account balances, and spending insights completely free.",
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
   featureList: [
     "Expense tracking",
@@ -98,6 +98,15 @@ const faqJsonLd = {
   })),
 }
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "MoneySpent",
+  url: "https://moneyspent.app",
+  logo: "https://moneyspent.app/logo.svg",
+  description: "A simple, private personal finance and expense tracker.",
+}
+
 export default function Home() {
   return (
     <main className="lp-root min-h-svh">
@@ -108,6 +117,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
       />
       <SiteHeader />
       <HeroSection />

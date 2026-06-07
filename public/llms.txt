@@ -1,0 +1,26 @@
+# MoneySpent - Personal Finance & Expense Tracker
+
+## What is MoneySpent?
+MoneySpent is a simple, private personal finance tracker for expenses, budgets, accounts, balances, and spending insights. It helps you log spending in seconds, stay on budget, and know exactly where your money goes.
+
+## Key Statistics & Facts
+- Over 2,000+ happy users track their money with MoneySpent.
+- MoneySpent is completely free for personal use ($0/month).
+- 100% private, on-device data. No ads and no data tracking.
+
+## Features
+- Unlimited manual transactions
+- Track multiple accounts & cards
+- Smart category management
+- Personalized spending insights
+
+## Use Cases
+- Expense tracking
+- Budget tracking
+- Account balance tracking
+- Spending analytics
+- Personal finance dashboard
+
+## Links
+- Website: https://moneyspent.app
+- Pricing: Free forever for personal use.

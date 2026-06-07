@@ -4,28 +4,28 @@ import { Fragment, useEffect, useRef, useState } from "react"
 
 const WORDS = [
   {
-    text:  "₹450",
+    text: "₹450",
     after: " on ",
     color: "var(--lp-em)",
-    bg:    "var(--lp-em-soft)",
+    bg: "var(--lp-em-soft)",
   },
   {
-    text:  "🍔 Food",
+    text: "🍔 Food",
     after: " at ",
     color: "var(--lp-amber)",
-    bg:    "var(--lp-amber-soft)",
+    bg: "var(--lp-amber-soft)",
   },
   {
-    text:  "Burger King",
+    text: "Burger King",
     after: " paid with ",
     color: "var(--lp-rose)",
-    bg:    "var(--lp-rose-soft)",
+    bg: "var(--lp-rose-soft)",
   },
   {
-    text:  "Fi",
+    text: "HDFC bank",
     after: ".",
     color: "var(--lp-indigo)",
-    bg:    "var(--lp-indigo-soft)",
+    bg: "var(--lp-indigo-soft)",
   },
 ]
 
