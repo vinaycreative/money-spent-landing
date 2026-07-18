@@ -6,6 +6,9 @@ import PageHeader from "@/components/layouts/PageHeader"
 import TransactionCard from "@/components/cards/Transaction"
 import { Transaction } from "@/types/Transaction"
 
+/** Fixed timestamps avoid SSR/client hydration mismatches in the landing preview. */
+const PREVIEW_AT = "2026-07-17T10:42:00.000Z"
+
 const MOCK_TRANSACTIONS: Transaction[] = [
   {
     id: "1",
@@ -17,12 +20,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Coffee",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c1", icon: "🏖️", kind: "expense", name: "Drink", color: "bg-indigo-400" },
-    accounts: { id: "a1", name: "SBI", type: "credit" }
+    accounts: { id: "a1", name: "SBI", type: "credit" },
   },
   {
     id: "2",
@@ -34,12 +37,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Snacks",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c2", icon: "🍔", kind: "expense", name: "Food", color: "bg-yellow-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
   },
   {
     id: "5",
@@ -51,13 +54,13 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Salary",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c5", icon: "💰", kind: "income", name: "Salary", color: "bg-emerald-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
-  }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
+  },
 ]
 
 export function DashboardPreview() {

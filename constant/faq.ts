@@ -75,3 +75,13 @@ export const faq = [
       "You can start in a few minutes by creating your account, setting up your accounts and categories, and adding your first transaction.",
   },
 ]
+
+/** Short set for the landing page UI. Full `faq` stays for SEO schema. */
+export const landingFaq = [
+  faq[0], // What is MoneySpent?
+  faq[2], // Daily expense tracker
+  faq[4], // Multiple accounts
+  faq[10], // Free?
+  faq[12], // Mobile / PWA
+  faq[13], // What makes it different
+]

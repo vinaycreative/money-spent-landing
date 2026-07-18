@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono, Fraunces } from "next/font/google"
+import { Geist, Geist_Mono, DM_Sans } from "next/font/google"
 import "./globals.css"
 import { getSiteUrl, siteDescription, siteName } from "@/lib/site"
 import { GoogleAnalytics } from "@next/third-parties/google"
@@ -14,11 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const dmSans = DM_Sans({
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
   display: "swap",
 })
 
@@ -104,7 +103,7 @@ export default function RootLayout({
         <AccentScript />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} bg-background`}
         suppressHydrationWarning
       >
         <PostHogProvider>

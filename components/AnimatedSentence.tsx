@@ -2,7 +2,14 @@
 
 import { Fragment, useEffect, useRef, useState } from "react"
 
-const WORDS = [
+export type SentenceWord = {
+  text: string
+  after: string
+  color: string
+  bg: string
+}
+
+const DEFAULT_WORDS: SentenceWord[] = [
   {
     text: "₹450",
     after: " on ",
@@ -10,7 +17,7 @@ const WORDS = [
     bg: "var(--lp-em-soft)",
   },
   {
-    text: "🍔 Food",
+    text: "Food",
     after: " at ",
     color: "var(--lp-amber)",
     bg: "var(--lp-amber-soft)",
@@ -22,24 +29,27 @@ const WORDS = [
     bg: "var(--lp-rose-soft)",
   },
   {
-    text: "HDFC bank",
+    text: "HDFC Bank",
     after: ".",
     color: "var(--lp-indigo)",
     bg: "var(--lp-indigo-soft)",
   },
 ]
 
-export function AnimatedSentence() {
+export function AnimatedSentence({ words = DEFAULT_WORDS }: { words?: SentenceWord[] }) {
   const [activeIdx, setActiveIdx] = useState<number | null>(null)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    if (reduceMotion) return
+
     function go(idx: number) {
       setActiveIdx(idx)
 
       timerRef.current = setTimeout(() => {
         setActiveIdx(null)
-        const next = (idx + 1) % WORDS.length
+        const next = (idx + 1) % words.length
         const gap = next === 0 ? 2000 : 420
         timerRef.current = setTimeout(() => go(next), gap)
       }, 800)
@@ -50,15 +60,12 @@ export function AnimatedSentence() {
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current)
     }
-  }, [])
+  }, [words.length])
 
   return (
-    <div
-      className="lp-serif mt-6 flex-1 text-[28px] font-medium leading-[1.5] tracking-[-0.018em]"
-      style={{ color: "var(--lp-ink-mute)" }}
-    >
+    <div className="lp-serif mt-6 flex-1 text-[28px] font-medium leading-[1.5] tracking-[-0.018em] text-lp-ink-mute">
       {"I spent "}
-      {WORDS.map((seg, i) => {
+      {words.map((seg, i) => {
         const active = activeIdx === i
         return (
           <Fragment key={i}>
@@ -66,10 +73,9 @@ export function AnimatedSentence() {
               className="lp-sent-word"
               style={{
                 color: seg.color,
-                transform: active ? "scale(1.13)" : "scale(1)",
+                transform: active ? "scale(1.08)" : "scale(1)",
                 backgroundColor: active ? seg.bg : "transparent",
-                boxShadow: active ? `0 0 0 7px ${seg.bg}` : `0 0 0 0px ${seg.bg}`,
-                willChange: "transform, background-color, box-shadow",
+                boxShadow: active ? `0 0 0 6px ${seg.bg}` : `0 0 0 0px ${seg.bg}`,
               }}
             >
               {seg.text}

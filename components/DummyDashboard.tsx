@@ -13,6 +13,10 @@ const AddExpenseSheet = dynamic(() => import("@/components/sheet/AddExpenseSheet
 const AddIncomeSheet = dynamic(() => import("@/components/sheet/AddIncomeSheet").then(mod => mod.AddIncomeSheet), { ssr: false })
 import { Transaction } from "@/types/Transaction"
 
+/** Fixed timestamps avoid SSR/client hydration mismatches in gallery previews. */
+const PREVIEW_AT = "2026-07-17T10:42:00.000Z"
+const PREVIEW_DAY = startOfDay(new Date("2026-07-17T12:00:00.000Z"))
+
 const MOCK_TRANSACTIONS: Transaction[] = [
   {
     id: "1",
@@ -24,12 +28,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Coffee",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c1", icon: "🏖️", kind: "expense", name: "Drink", color: "bg-indigo-400" },
-    accounts: { id: "a1", name: "SBI", type: "credit" }
+    accounts: { id: "a1", name: "SBI", type: "credit" },
   },
   {
     id: "2",
@@ -41,12 +45,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Snacks",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c2", icon: "🍔", kind: "expense", name: "Food", color: "bg-yellow-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
   },
   {
     id: "3",
@@ -58,12 +62,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Medicine",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c3", icon: "🏥", kind: "expense", name: "Health", color: "bg-red-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
   },
   {
     id: "4",
@@ -75,12 +79,12 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Groceries",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c4", icon: "🛒", kind: "expense", name: "Shopping", color: "bg-purple-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
   },
   {
     id: "5",
@@ -92,21 +96,21 @@ const MOCK_TRANSACTIONS: Transaction[] = [
     currency: "INR",
     title: "Salary",
     description: "",
-    occurred_at: new Date().toISOString(),
+    occurred_at: PREVIEW_AT,
     related_transfer_id: null,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
+    created_at: PREVIEW_AT,
+    updated_at: PREVIEW_AT,
     categories: { id: "c5", icon: "💰", kind: "income", name: "Salary", color: "bg-emerald-400" },
-    accounts: { id: "a2", name: "Fi", type: "bank" }
-  }
+    accounts: { id: "a2", name: "Fi", type: "bank" },
+  },
 ]
 
 const DummyDashboard = ({ interactive = false }: { interactive?: boolean }) => {
-  const [selectedDate, setSelectedDate] = useState(() => startOfDay(new Date()))
+  const [selectedDate, setSelectedDate] = useState(() => PREVIEW_DAY)
   const [expenseSheetOpen, setExpenseSheetOpen] = useState(false)
   const [incomeSheetOpen, setIncomeSheetOpen] = useState(false)
 
-  const dayOffset = Math.abs(differenceInCalendarDays(startOfDay(new Date()), selectedDate))
+  const dayOffset = Math.abs(differenceInCalendarDays(PREVIEW_DAY, selectedDate))
   const rotation = dayOffset % MOCK_TRANSACTIONS.length
   
   // Deterministic subset based on date to simulate variety without huge DOM

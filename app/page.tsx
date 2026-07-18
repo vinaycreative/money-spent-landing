@@ -15,8 +15,8 @@ const FeaturesSection = dynamic(() =>
 const ScreenGallery = dynamic(() =>
   import("@/components/landing/ScreenGallery").then((mod) => mod.ScreenGallery),
 )
-const StatsSection = dynamic(() =>
-  import("@/components/landing/StatsSection").then((mod) => mod.StatsSection),
+const PrivacySection = dynamic(() =>
+  import("@/components/landing/PrivacySection").then((mod) => mod.PrivacySection),
 )
 const FreeSection = dynamic(() =>
   import("@/components/landing/FreeSection").then((mod) => mod.FreeSection),
@@ -128,7 +128,7 @@ export default function Home() {
       <SentenceSection />
       <FeaturesSection />
       <ScreenGallery />
-      {/* <StatsSection /> */}
+      <PrivacySection />
       <FreeSection />
       <FaqSection />
       <CtaSection />
