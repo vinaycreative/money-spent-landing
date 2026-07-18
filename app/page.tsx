@@ -102,9 +102,24 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "MoneySpent",
-  url: "https://moneyspent.app",
-  logo: "https://moneyspent.app/logo.svg",
+  url: "https://www.moneyspent.app/",
+  logo: "https://www.moneyspent.app/logo.svg",
   description: "A simple, private personal finance and expense tracker.",
+}
+
+// Preferred Google Search site name (shown above the blue title).
+// https://developers.google.com/search/docs/appearance/site-names
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "MoneySpent",
+  alternateName: ["Money Spent", "moneyspent.app"],
+  url: "https://www.moneyspent.app/",
+  publisher: {
+    "@type": "Organization",
+    name: "MoneySpent",
+    url: "https://www.moneyspent.app/",
+  },
 }
 
 export default function Home() {
@@ -121,6 +136,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       <SiteHeader />
       <HeroSection />
