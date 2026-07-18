@@ -5,19 +5,19 @@ import { useCases } from "@/constant/use-cases"
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl().toString().replace(/\/$/, "")
 
-  // Core routes
-  const routes = ["", "/privacy", "/terms", "/cookies"].map((route) => ({
+  const coreRoutes = [
+    { route: "", priority: 1, changeFrequency: "weekly" as const },
+    { route: "/expense-tracker", priority: 0.9, changeFrequency: "weekly" as const },
+    { route: "/budget-tracker", priority: 0.9, changeFrequency: "weekly" as const },
+    { route: "/faq", priority: 0.85, changeFrequency: "monthly" as const },
+    { route: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
+    { route: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
+    { route: "/cookies", priority: 0.3, changeFrequency: "yearly" as const },
+  ].map(({ route, priority, changeFrequency }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
-    changeFrequency: (route === "" ? "weekly" : "monthly") as
-      | "weekly"
-      | "monthly"
-      | "always"
-      | "hourly"
-      | "daily"
-      | "yearly"
-      | "never",
-    priority: route === "" ? 1 : 0.8,
+    changeFrequency,
+    priority,
   }))
 
   const useCaseRoutes = useCases.map((useCase) => ({
@@ -27,5 +27,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...routes, ...useCaseRoutes]
+  return [...coreRoutes, ...useCaseRoutes]
 }

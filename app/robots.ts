@@ -5,10 +5,19 @@ export default function robots(): MetadataRoute.Robots {
   const baseUrl = getSiteUrl().toString().replace(/\/$/, "")
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+      // Explicit allow for AI answer engines (AEO / GEO)
+      { userAgent: "GPTBot", allow: "/" },
+      { userAgent: "ChatGPT-User", allow: "/" },
+      { userAgent: "ClaudeBot", allow: "/" },
+      { userAgent: "anthropic-ai", allow: "/" },
+      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+    ],
     sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

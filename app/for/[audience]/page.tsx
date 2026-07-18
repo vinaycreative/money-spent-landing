@@ -6,6 +6,7 @@ import { useCases } from "@/constant/use-cases"
 import { SiteHeader } from "@/components/landing/SiteHeader"
 import { UseCaseHeroSection } from "@/components/landing/UseCaseHeroSection"
 import { UseCaseContentSection } from "@/components/landing/UseCaseContentSection"
+import { RelatedLinks } from "@/components/landing/RelatedLinks"
 
 const SentenceSection = dynamic(() =>
   import("@/components/landing/SentenceSection").then((mod) => mod.SentenceSection),
@@ -40,6 +41,11 @@ export async function generateMetadata({
     title: useCase.title,
     description: useCase.description,
     alternates: { canonical: `/for/${useCase.slug}` },
+    openGraph: {
+      title: useCase.title,
+      description: useCase.description,
+      url: `/for/${useCase.slug}`,
+    },
   }
 }
 
@@ -55,11 +61,21 @@ export default async function UseCasePage({
     notFound()
   }
 
+  const related = [
+    { href: "/expense-tracker", label: "Expense tracker" },
+    { href: "/budget-tracker", label: "Budget tracker" },
+    ...useCases
+      .filter((uc) => uc.slug !== useCase.slug)
+      .map((uc) => ({ href: `/for/${uc.slug}`, label: `For ${uc.slug}` })),
+    { href: "/faq", label: "FAQ" },
+  ]
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "MoneySpent",
     applicationCategory: "FinanceApplication",
+    operatingSystem: "Web, iOS, Android",
     description: useCase.description,
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
   }
@@ -85,10 +101,15 @@ export default async function UseCasePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <SiteHeader />
-      <UseCaseHeroSection title={useCase.heroTitle} subHeadline={useCase.heroSub} />
+      <UseCaseHeroSection
+        title={useCase.heroTitle}
+        subHeadline={useCase.heroSub}
+        eyebrow={`For ${useCase.slug}`}
+      />
       <UseCaseContentSection contentBlocks={useCase.contentBlocks} />
       <SentenceSection sentenceWords={useCase.sentenceWords} />
       <FaqSection customFaq={useCase.faq} />
+      <RelatedLinks links={related} />
       <CtaSection />
       <SiteFooter />
     </main>

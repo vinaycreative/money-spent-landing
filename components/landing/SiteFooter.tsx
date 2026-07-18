@@ -12,11 +12,22 @@ export function SiteFooter() {
     {
       title: "Product",
       links: [
-        ["#features", "Features"],
-        ["#sentence", "How it works"],
-        ["#pricing", "Pricing"],
+        ["/#features", "Features"],
+        ["/#sentence", "How it works"],
+        ["/#pricing", "Pricing"],
+        ["/expense-tracker", "Expense tracker"],
+        ["/budget-tracker", "Budget tracker"],
         [onboardingUrl, "Get started"],
         [loginUrl, "Sign in"],
+      ],
+    },
+    {
+      title: "Learn",
+      links: [
+        ["/faq", "FAQ"],
+        ["/for/freelancers", "For freelancers"],
+        ["/for/students", "For students"],
+        ["/for/couples", "For couples"],
       ],
     },
     {
@@ -61,7 +72,7 @@ export function SiteFooter() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             {cols.map(({ title, links }) => (
               <div key={title}>
                 <h3 className="mb-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-lp-ink">
