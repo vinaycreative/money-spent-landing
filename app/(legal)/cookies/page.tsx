@@ -1,9 +1,11 @@
-import type { Metadata } from "next"
+import { buildPageMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "Cookie Policy | MoneySpent",
-  description: "Detailed information about how we use cookies and local storage at MoneySpent.",
-}
+export const metadata = buildPageMetadata({
+  title: "Cookie Policy",
+  description:
+    "How MoneySpent uses cookies and local storage for analytics, preferences, and product improvement.",
+  path: "/cookies",
+})
 
 export default function CookiePage() {
   return (
@@ -13,7 +15,7 @@ export default function CookiePage() {
       </h1>
       
       <div className="space-y-10 text-base leading-relaxed text-lp-ink-mute">
-        <p className="text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+        <p className="text-sm">Last updated: July 18, 2026</p>
 
         <section>
           <h2 className="mb-4 text-xl font-semibold text-lp-ink">1. Introduction to Cookies</h2>

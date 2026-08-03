@@ -1,7 +1,7 @@
 export const siteName = "MoneySpent"
 
 export const siteDescription =
-  "MoneySpent is a simple personal finance tracker for expenses, budgets, accounts, balances, and spending insights."
+  "MoneySpent is a free personal finance tracker for expenses, budgets, accounts, balances, and spending insights—private, ad-free, and built for daily use."
 
 /** Canonical production origin — must match the GSC property you want indexed. */
 export const CANONICAL_SITE_ORIGIN = "https://www.moneyspent.app"

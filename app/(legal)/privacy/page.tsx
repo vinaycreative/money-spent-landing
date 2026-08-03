@@ -1,9 +1,11 @@
-import type { Metadata } from "next"
+import { buildPageMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | MoneySpent",
-  description: "Comprehensive Privacy Policy and data handling practices for MoneySpent.",
-}
+export const metadata = buildPageMetadata({
+  title: "Privacy Policy",
+  description:
+    "MoneySpent Privacy Policy: how we collect, use, and protect personal and financial tracking data.",
+  path: "/privacy",
+})
 
 export default function PrivacyPage() {
   return (
@@ -13,7 +15,7 @@ export default function PrivacyPage() {
       </h1>
       
       <div className="space-y-10 text-base leading-relaxed text-lp-ink-mute">
-        <p className="text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+        <p className="text-sm">Last updated: July 18, 2026</p>
 
         <section>
           <h2 className="mb-4 text-xl font-semibold text-lp-ink">1. Introduction</h2>

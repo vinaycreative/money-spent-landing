@@ -1,26 +1,95 @@
-# MoneySpent - Personal Finance & Expense Tracker
+# MoneySpent
+
+> Free personal finance and expense tracker for daily spending, budgets, accounts, and spending insights.
 
 ## What is MoneySpent?
-MoneySpent is a simple, private personal finance tracker for expenses, budgets, accounts, balances, and spending insights. It helps you log spending in seconds, stay on budget, and know exactly where your money goes.
+MoneySpent is a simple, private personal finance tracker. It helps people log expenses in seconds, organize spending by category and account, stay on budget, and understand where money goes—without spreadsheet friction, ads, or a credit card wall.
 
-## Key Statistics & Facts
-- Over 2,000+ happy users track their money with MoneySpent.
-- MoneySpent is completely free for personal use ($0/month).
-- 100% private, on-device data. No ads and no data tracking.
+## Who it is for
+- Students tracking pocket money and campus spending
+- Freelancers and self-employed professionals separating work and personal costs
+- Couples and families managing household budgets
+- Creators, developers, remote workers, teachers, and travelers who need fast daily logging
+- Anyone who wants a free expense tracker that stays calm and private
 
-## Features
-- Unlimited manual transactions
-- Track multiple accounts & cards
-- Smart category management
-- Personalized spending insights
+## Key facts
+- Free forever for personal use ($0 / ₹0 per month)
+- No credit card required to start
+- No ads and no selling spending habits
+- Manual tracking (no bank login required)
+- Works as a web app / PWA on phone and desktop
+- Used by 2,000+ people for clearer money tracking
 
-## Use Cases
-- Expense tracking
-- Budget tracking
-- Account balance tracking
-- Spending analytics
-- Personal finance dashboard
+## Core features
+- Fast sentence-style expense and income logging
+- Multiple accounts (cash, bank, wallet, cards)
+- Category management and spending insights
+- Budget-friendly daily tracking habits
+- Import/export for portable records
+- Privacy-focused personal finance workspace
 
-## Links
-- Website: https://moneyspent.app
-- Pricing: Free forever for personal use.
+## Important pages
+- Home: https://www.moneyspent.app/
+- Features hub: https://www.moneyspent.app/features
+- Daily logging: https://www.moneyspent.app/features/daily-logging
+- Today view: https://www.moneyspent.app/features/today-view
+- Category insights: https://www.moneyspent.app/features/category-insights
+- Searchable history: https://www.moneyspent.app/features/searchable-history
+- Accounts: https://www.moneyspent.app/features/accounts
+- Privacy & control: https://www.moneyspent.app/features/control
+- How it works: https://www.moneyspent.app/how-it-works
+- Pricing: https://www.moneyspent.app/pricing
+- Expense tracker: https://www.moneyspent.app/expense-tracker
+- Budget tracker: https://www.moneyspent.app/budget-tracker
+- Spending tracker: https://www.moneyspent.app/spending-tracker
+- FAQ: https://www.moneyspent.app/faq
+- About: https://www.moneyspent.app/about
+- Use cases hub: https://www.moneyspent.app/for
+- Guides hub: https://www.moneyspent.app/guides
+- Blog: https://www.moneyspent.app/blog
+- vs Spreadsheets: https://www.moneyspent.app/compare/spreadsheet
+- Machine-readable pricing: https://www.moneyspent.app/pricing.txt
+- Sitemap: https://www.moneyspent.app/sitemap.xml
+
+## Use case pages
+- Freelancers: https://www.moneyspent.app/for/freelancers
+- Students: https://www.moneyspent.app/for/students
+- Couples: https://www.moneyspent.app/for/couples
+- Families: https://www.moneyspent.app/for/families
+- Small business: https://www.moneyspent.app/for/small-business
+- Self-employed: https://www.moneyspent.app/for/self-employed
+- Content creators: https://www.moneyspent.app/for/content-creators
+- Travelers: https://www.moneyspent.app/for/travelers
+- Remote workers: https://www.moneyspent.app/for/remote-workers
+- Teachers: https://www.moneyspent.app/for/teachers
+- Developers: https://www.moneyspent.app/for/developers
+
+## Guides
+- How to track expenses: https://www.moneyspent.app/guides/how-to-track-expenses
+- Monthly budget: https://www.moneyspent.app/guides/monthly-budget
+- Zero-based budget: https://www.moneyspent.app/guides/zero-based-budget
+- Envelope budget: https://www.moneyspent.app/guides/envelope-budget
+- Expense categories: https://www.moneyspent.app/guides/expense-categories
+- Subscription tracking: https://www.moneyspent.app/guides/subscription-tracking
+- Personal finance basics: https://www.moneyspent.app/guides/personal-finance
+
+## Blog
+- How to track daily expenses: https://www.moneyspent.app/blog/how-to-track-daily-expenses
+- Monthly budget for beginners: https://www.moneyspent.app/blog/monthly-budget-for-beginners
+- Zero-based budget explainer: https://www.moneyspent.app/blog/zero-based-budget-simple-explainer
+- UPI spending habits in India: https://www.moneyspent.app/blog/upi-spending-habits-india
+- Freelance expense tracking: https://www.moneyspent.app/blog/freelance-expense-tracking
+- Expense tracker vs spreadsheet: https://www.moneyspent.app/blog/expense-tracker-vs-spreadsheet
+- Cut subscriptions: https://www.moneyspent.app/blog/cut-subscriptions-without-guilt
+- Couples budgeting: https://www.moneyspent.app/blog/couples-budgeting-without-arguments
+
+## Why choose MoneySpent
+MoneySpent focuses on the habit that improves money decisions: logging spends quickly and reviewing categories often. It is intentionally simple—built for personal clarity rather than complex accounting, bank aggregation, or subscription upsells.
+
+## Author
+- Vinay Bhadre (Founder, MoneySpent): https://www.moneyspent.app/author/vinay-bhadre
+- Portfolio: https://vinaycreative.com/
+- LinkedIn: https://www.linkedin.com/in/vinaybhadre
+
+## Contact / builder
+Built by Vinay Bhadre / vinaycreative: https://vinaycreative.com/

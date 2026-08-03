@@ -43,13 +43,13 @@ export function CtaSection() {
               >
                 Get started free
               </Link>
-              <Link
+              {/* <Link
                 href={loginUrl}
                 className="lp-btn-ghost inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-line px-7 text-sm font-medium text-lp-ink-soft"
                 onClick={() => posthog.capture("cta_sign_in_clicked", { location: "cta_section" })}
               >
                 Sign in
-              </Link>
+              </Link> */}
             </div>
 
             <p className="mt-6 text-[12px] font-medium text-lp-ink-mute">

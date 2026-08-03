@@ -1324,6 +1324,11 @@ input[type="number"] {
   color: var(--lp-ink);
   background: var(--lp-bg-2);
 }
+.lp-nav-link-active {
+  color: var(--lp-ink);
+  background: var(--lp-bg-2);
+  font-weight: 600;
+}
 
 /* Section reveal helper (used with motion) */
 .lp-section-label {

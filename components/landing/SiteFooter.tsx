@@ -12,11 +12,16 @@ export function SiteFooter() {
     {
       title: "Product",
       links: [
-        ["/#features", "Features"],
-        ["/#sentence", "How it works"],
-        ["/#pricing", "Pricing"],
+        ["/features", "All features"],
+        ["/features/daily-logging", "Daily logging"],
+        ["/features/today-view", "Today view"],
+        ["/features/category-insights", "Category insights"],
+        ["/features/searchable-history", "Searchable history"],
+        ["/features/accounts", "Accounts"],
+        ["/features/control", "Privacy & control"],
+        ["/how-it-works", "How it works"],
+        ["/pricing", "Pricing"],
         ["/expense-tracker", "Expense tracker"],
-        ["/budget-tracker", "Budget tracker"],
         [onboardingUrl, "Get started"],
         [loginUrl, "Sign in"],
       ],
@@ -24,10 +29,16 @@ export function SiteFooter() {
     {
       title: "Learn",
       links: [
+        ["/blog", "Blog"],
+        ["/author/vinay-bhadre", "Author: Vinay Bhadre"],
+        ["/guides", "Guides"],
         ["/faq", "FAQ"],
+        ["/for", "Use cases"],
         ["/for/freelancers", "For freelancers"],
         ["/for/students", "For students"],
         ["/for/couples", "For couples"],
+        ["/compare/spreadsheet", "vs Spreadsheets"],
+        ["/about", "About"],
       ],
     },
     {
@@ -49,7 +60,7 @@ export function SiteFooter() {
               <span className="grid size-9 place-items-center rounded-lg border border-lp-line bg-lp-card">
                 <Image
                   src="/logo.svg"
-                  alt=""
+                  alt="MoneySpent"
                   width={22}
                   height={22}
                   className="transition duration-300 group-hover:rotate-6"
@@ -67,8 +78,8 @@ export function SiteFooter() {
               Save calmer.
             </h2>
             <p className="mt-4 max-w-[400px] text-[15px] leading-relaxed text-lp-ink-mute">
-              Track accounts, expenses, and spending patterns in a workspace that stays clean and
-              easy to read.
+              Free personal finance tracker for expenses, budgets, accounts, and spending insights
+              clean, private, and built for daily use.
             </p>
           </div>
 

@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/login", "/onboarding", "/spend", "/api/"],
       },
       // Explicit allow for AI answer engines (AEO / GEO)
       { userAgent: "GPTBot", allow: "/" },
@@ -17,7 +18,9 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "anthropic-ai", allow: "/" },
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "Google-Extended", allow: "/" },
+      { userAgent: "Bingbot", allow: "/" },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   }
 }

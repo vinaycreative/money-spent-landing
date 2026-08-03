@@ -1,13 +1,13 @@
-import type { Metadata } from "next"
 import { getIntentPage } from "@/constant/intent-pages"
 import { SeoContentPage } from "@/components/landing/SeoContentPage"
+import { buildPageMetadata } from "@/lib/seo"
 
 const page = getIntentPage("expense-tracker")!
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: page.title,
   description: page.description,
-  alternates: { canonical: page.path },
+  path: page.path,
   keywords: [
     "expense tracker",
     "free expense tracker",
@@ -15,12 +15,7 @@ export const metadata: Metadata = {
     "expense tracker app",
     "MoneySpent",
   ],
-  openGraph: {
-    title: page.title,
-    description: page.description,
-    url: page.path,
-  },
-}
+})
 
 export default function ExpenseTrackerPage() {
   return (
@@ -32,6 +27,11 @@ export default function ExpenseTrackerPage() {
       faq={page.faq}
       related={page.related}
       softwareDescription={page.description}
+      path={page.path}
+      breadcrumbs={[
+        { name: "Home", path: "/" },
+        { name: "Expense tracker", path: page.path },
+      ]}
     />
   )
 }

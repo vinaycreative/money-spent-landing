@@ -78,6 +78,8 @@ export const intentPages: IntentPage[] = [
     ],
     related: [
       { href: "/budget-tracker", label: "Budget tracker" },
+      { href: "/spending-tracker", label: "Spending tracker" },
+      { href: "/guides/how-to-track-expenses", label: "How to track expenses" },
       { href: "/for/students", label: "For students" },
       { href: "/for/freelancers", label: "For freelancers" },
       { href: "/faq", label: "FAQ" },
@@ -151,7 +153,78 @@ export const intentPages: IntentPage[] = [
       { href: "/expense-tracker", label: "Expense tracker" },
       { href: "/for/couples", label: "For couples" },
       { href: "/for/students", label: "For students" },
+      { href: "/guides/monthly-budget", label: "Monthly budget guide" },
       { href: "/faq", label: "FAQ" },
+    ],
+  },
+  {
+    slug: "spending-tracker",
+    path: "/spending-tracker",
+    title: "Free Spending Tracker App | MoneySpent",
+    description:
+      "Track daily spending by category and account with MoneySpent. A free spending tracker for clearer habits—no ads, no credit card required.",
+    eyebrow: "Spending tracker",
+    h1: "A spending tracker that makes daily money visible.",
+    intro:
+      "If you have ever wondered where the month went, you need spending visibility—not another complicated finance dashboard. MoneySpent helps you log spends fast and review patterns clearly.",
+    sections: [
+      {
+        title: "What is a spending tracker?",
+        body: "A spending tracker records everyday purchases so you can see totals by day, category, and account. It turns scattered payments into a readable story of your money habits.",
+      },
+      {
+        title: "Daily spending clarity beats monthly regret",
+        body: "Waiting until month end hides problems. With MoneySpent, today’s spends stay in view, so you can adjust food delivery, transport, or shopping before the damage compounds.",
+      },
+      {
+        title: "Categories reveal the real pattern",
+        body: "Raw transaction lists are noisy. Category insights show whether food, subscriptions, or shopping is driving the trend—so decisions become specific.",
+      },
+      {
+        title: "Track every account you actually use",
+        body: "Cash, UPI, cards, and bank accounts often fund the same lifestyle. MoneySpent keeps them together so your spending picture matches reality.",
+      },
+      {
+        title: "Free personal spending tracker",
+        body: "Start without a credit card. MoneySpent is free for personal use, private by design, and built for the daily habit that improves budgets.",
+      },
+    ],
+    faq: [
+      {
+        question: "Is MoneySpent a free spending tracker?",
+        answer:
+          "Yes. Personal spending tracking is free, with no credit card required to start.",
+      },
+      {
+        question: "How is a spending tracker different from a budget tracker?",
+        answer:
+          "A spending tracker records what happened. A budget uses those records to guide what should happen next. MoneySpent supports both.",
+      },
+      {
+        question: "Can I track spending on mobile?",
+        answer:
+          "Yes. MoneySpent works as a web app/PWA so you can log spends from your phone.",
+      },
+      {
+        question: "Does MoneySpent show spending by category?",
+        answer: "Yes. Category insights help you see where money goes over time.",
+      },
+      {
+        question: "Do I need to connect my bank?",
+        answer:
+          "No. MoneySpent is a manual spending tracker designed for simple, private logging.",
+      },
+      {
+        question: "Who should use a spending tracker?",
+        answer:
+          "Anyone who wants clearer daily money habits—students, freelancers, couples, families, and professionals tired of spreadsheet catch-up.",
+      },
+    ],
+    related: [
+      { href: "/expense-tracker", label: "Expense tracker" },
+      { href: "/budget-tracker", label: "Budget tracker" },
+      { href: "/guides/how-to-track-expenses", label: "How to track expenses" },
+      { href: "/for/students", label: "For students" },
     ],
   },
 ]

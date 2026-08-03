@@ -31,20 +31,35 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
   title: {
-    default: `${siteName} | Personal Finance & Expense Tracker`,
+    default: `${siteName} | Free Personal Finance & Expense Tracker`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   applicationName: siteName,
-  authors: [{ name: siteName }],
+  authors: [
+    { name: "Vinay Bhadre", url: "https://www.moneyspent.app/author/vinay-bhadre" },
+  ],
   creator: siteName,
   publisher: siteName,
+  category: "finance",
+  keywords: [
+    "MoneySpent",
+    "expense tracker",
+    "budget tracker",
+    "personal finance tracker",
+    "spending tracker",
+    "free expense tracker",
+  ],
   manifest: "/manifest.json",
+  icons: {
+    icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/web-app-manifest-192x192.png", sizes: "192x192" }],
+  },
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: `${siteName} | Personal Finance & Expense Tracker`,
+    title: `${siteName} | Free Personal Finance & Expense Tracker`,
     description: siteDescription,
     url: "/",
     siteName,
@@ -61,7 +76,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Personal Finance & Expense Tracker`,
+    title: `${siteName} | Free Personal Finance & Expense Tracker`,
     description: siteDescription,
     images: ["/og.png"],
   },

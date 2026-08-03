@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import {
   CalendarDays,
   ChartPie,
@@ -11,35 +12,41 @@ import {
 } from "lucide-react"
 import { motion } from "motion/react"
 
-const features: { title: string; desc: string; icon: LucideIcon }[] = [
+const features: { title: string; desc: string; href: string; icon: LucideIcon }[] = [
   {
     title: "Fast daily logging",
     desc: "Add an expense or income, pick the account and category, and get back to your day.",
+    href: "/features/daily-logging",
     icon: Zap,
   },
   {
     title: "Today, at a glance",
     desc: "Open to the day that matters. See spend for today, move between dates, review every transaction.",
+    href: "/features/today-view",
     icon: CalendarDays,
   },
   {
     title: "Category insights",
     desc: "See where money went by category, then drill into totals, trends, and matching transactions.",
+    href: "/features/category-insights",
     icon: ChartPie,
   },
   {
     title: "Searchable history",
     desc: "Search transactions, filter by date, account, or type — list or calendar view.",
+    href: "/features/searchable-history",
     icon: Search,
   },
   {
     title: "All your accounts",
     desc: "Cash, bank, wallet, and credit side by side. Balances update as you track.",
+    href: "/features/accounts",
     icon: Layers3,
   },
   {
     title: "Built for control",
     desc: "Hide balances, customize themes and categories, import and export when you need to.",
+    href: "/features/control",
     icon: ShieldCheck,
   },
 ]
@@ -68,12 +75,16 @@ export function FeaturesSection() {
           </div>
           <p className="max-w-sm text-base leading-relaxed text-lp-ink-mute lg:pb-1">
             From quick entries to category drill-downs — money questions stay close without turning
-            tracking into another chore.
+            tracking into another chore.{" "}
+            <Link href="/features" className="font-medium text-lp-ink underline-offset-2 hover:underline">
+              Explore all features
+            </Link>
+            .
           </p>
         </motion.div>
 
         <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
-          {features.map(({ title, desc, icon: Icon }, i) => (
+          {features.map(({ title, desc, href, icon: Icon }, i) => (
             <motion.article
               key={title}
               initial={{ opacity: 0, y: 16 }}
@@ -84,15 +95,20 @@ export function FeaturesSection() {
                 delay: i * 0.05,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="lp-feat group rounded-2xl border border-lp-line bg-lp-card p-6 sm:p-7"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-lp-line bg-lp-em-tint text-lp-em transition-colors duration-200 group-hover:border-lp-em/20 group-hover:bg-lp-em-soft">
-                <Icon size={18} strokeWidth={2.1} aria-hidden="true" />
-              </div>
-              <h3 className="lp-display mt-5 text-lg font-semibold tracking-[-0.02em] text-lp-ink">
-                {title}
-              </h3>
-              <p className="mt-2 text-[14px] leading-relaxed text-lp-ink-mute">{desc}</p>
+              <Link
+                href={href}
+                className="lp-feat group flex h-full flex-col rounded-2xl border border-lp-line bg-lp-card p-6 transition-colors hover:border-lp-em/30 sm:p-7"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-lp-line bg-lp-em-tint text-lp-em transition-colors duration-200 group-hover:border-lp-em/20 group-hover:bg-lp-em-soft">
+                  <Icon size={18} strokeWidth={2.1} aria-hidden="true" />
+                </div>
+                <h3 className="lp-display mt-5 text-lg font-semibold tracking-[-0.02em] text-lp-ink">
+                  {title}
+                </h3>
+                <p className="mt-2 text-[14px] leading-relaxed text-lp-ink-mute">{desc}</p>
+                <span className="mt-4 text-[13px] font-medium text-lp-em">Learn more →</span>
+              </Link>
             </motion.article>
           ))}
         </div>

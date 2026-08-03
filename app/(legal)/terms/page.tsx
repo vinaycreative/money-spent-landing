@@ -1,9 +1,10 @@
-import type { Metadata } from "next"
+import { buildPageMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "Terms of Service | MoneySpent",
-  description: "Comprehensive terms and conditions for using MoneySpent.",
-}
+export const metadata = buildPageMetadata({
+  title: "Terms of Service",
+  description: "Terms and conditions for using MoneySpent personal finance and expense tracking.",
+  path: "/terms",
+})
 
 export default function TermsPage() {
   return (
@@ -13,7 +14,7 @@ export default function TermsPage() {
       </h1>
       
       <div className="space-y-10 text-base leading-relaxed text-lp-ink-mute">
-        <p className="text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+        <p className="text-sm">Last updated: July 18, 2026</p>
 
         <section>
           <h2 className="mb-4 text-xl font-semibold text-lp-ink">1. Acceptance of Terms</h2>

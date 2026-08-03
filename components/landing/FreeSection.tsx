@@ -36,8 +36,8 @@ export function FreeSection() {
               <span className="text-lp-em">completely free.</span>
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-lp-ink-soft sm:text-lg">
-              Built for people, not for subscriptions. A clean finance workspace without the monthly
-              bill.
+              Free forever for personal expense tracking. A clean budget and spending workspace
+              without ads, paywalls, or a monthly bill.
             </p>
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">

@@ -42,16 +42,9 @@ export function HeroSection({
               )}
             </h1>
 
-            <div className="sr-only">
-              MoneySpent is a simple, private personal finance tracker. Log your daily spending in
-              seconds, stay on budget with smart categories, and track all your account balances in
-              one clear dashboard. Join over 2,000+ happy users tracking their money completely
-              free.
-            </div>
-
-            <p className="lp-hero-sub mx-auto mt-5 max-w-[440px] text-base leading-relaxed text-lp-ink-soft sm:text-lg lg:mx-0">
+            <p className="lp-hero-sub mx-auto mt-5 max-w-[480px] text-base leading-relaxed text-lp-ink-soft sm:text-lg lg:mx-0">
               {subHeadline ||
-                "Log spending in seconds, stay on budget, and know where your money goes."}
+                "Free expense tracker for daily spending, budgets, and account balances. Log spends in seconds and see where your money goes—without spreadsheet friction."}
             </p>
 
             <div className="lp-hero-cta mt-7 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
@@ -63,11 +56,11 @@ export function HeroSection({
                 Start tracking →
               </Link>
               <Link
-                href="#sentence"
+                href="/how-it-works"
                 className="lp-btn-ghost inline-flex min-h-12 items-center gap-2 rounded-full border border-lp-line px-5 text-sm font-medium text-lp-ink-soft"
                 onClick={() => posthog.capture("hero_explore_clicked", { location: "hero" })}
               >
-                Explore the app
+                See how it works
               </Link>
             </div>
 
